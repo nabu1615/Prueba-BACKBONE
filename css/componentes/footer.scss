@@ -4,48 +4,49 @@
       background-color: $color-fir;
       position: relative;
       padding: 1rem 0;
-      .& {
-          margin: 5rem auto;
-          width: 120rem;
-          max-width: 100%;
-          margin: 0 auto;
-          min-height: 100%;
+  }
+  
+  .footer {
+      margin: 5rem auto;
+      width: 120rem;
+      max-width: 100%;
+      margin: 0 auto;
+      min-height: 100%;
+      text-align: center;
+      @media (min-width: $media-768) {
+          text-align: left;
+      }
+      p {
+          font-size: 1.6rem;
           text-align: center;
+          color: #ffffff;
+          font-weight: 700;
           @media (min-width: $media-768) {
+              font-size: 2rem;
               text-align: left;
           }
-          p {
-              font-size: 1.6rem;
-              text-align: center;
-              color: #ffffff;
-              font-weight: 700;
-              @media (min-width: $media-768) {
-                  font-size: 2rem;
-                  text-align: left;
-              }
+      }
+      input {
+          padding: 2rem 1rem;
+          font-size: 18px;
+          text-align: center;
+      }
+      a {
+          text-decoration: none;
+          &:hover {
+              text-decoration: initial;
+              color: $color-tri;
           }
-          input {
-              padding: 2rem 1rem;
-              font-size: 18px;
-              text-align: center;
-          }
-          a {
-              text-decoration: none;
-              &:hover {
-                  text-decoration: initial;
-                  color: $color-tri;
-              }
-          }
-          input::-webkit-input-placeholder {
-              color: $color-fir;
-          }
-          .last {
-              height: 2rem;
-              width: 100%;
-              position: absolute;
-              bottom: 0;
-              top: auto;
-          }
+      }
+      input::-webkit-input-placeholder {
+          color: $color-fir;
+      }
+      .last {
+          height: 2rem;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          top: auto;
       }
   }
   
