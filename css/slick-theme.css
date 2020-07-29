@@ -184,9 +184,9 @@
     height: 20px;
     content: '•';
     text-align: center;
-    color: #FEBE42;
+    color: #ffffff;
 }
 
 .slick-dots li.slick-active button:before {
-    color: #000552;
+    color: #252525;
 }

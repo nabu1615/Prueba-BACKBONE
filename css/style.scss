@@ -7,9 +7,11 @@
     $font-size-h1: 4.8rem;
     $font-size-h2: 2.6rem;
     $media-768: 768px;
+    @import './normaize.scss';
     html {
         box-sizing: border-box;
         font-size: 62.5%;
+        font-family: 'Mulish', sans-serif;
     }
     
     *,
@@ -185,9 +187,9 @@
     
     .title {
         position: absolute;
-        top: 10rem;
+        top: 25%;
         left: 0;
-        height: 100%;
+        height: 50%;
         width: 100%;
     }
     
@@ -266,16 +268,24 @@
         position: relative;
     }
     
-    #slideshow .whatsapp {
+    .whatsapp {
         display: none;
-        color: #25D366;
+        color: #ffffff;
+        background-color: #25D366;
         right: 0;
         top: 50%;
-        font-size: 6rem;
+        font-size: 4rem;
+        padding: 0 1.2rem;
+        border-radius: 4px;
         @media (min-width: $media-768) {
             display: block;
             position: absolute;
         }
+    }
+    
+    .whatsapp:hover {
+        background-color: #000000;
+        color: #25D366;
     }
     
     .multiple-items i,
@@ -295,8 +305,16 @@
     .community {
         position: relative;
         text-align: center;
+        height: 50rem;
         @media (min-width: $media-768) {
             text-align: left;
+            height: 80rem;
+        }
+    }
+    
+    .comunidad {
+        @media (min-width: $media-768) {
+            padding-top: 20rem;
         }
     }
     
@@ -308,8 +326,9 @@
         @media (min-width: $media-768) {
             position: absolute;
             right: 0;
-            top: 0;
+            top: 15%;
             width: 50%;
+            height: 70%;
             margin: 0;
         }
     }
@@ -371,13 +390,21 @@
             margin: 10rem 0;
         }
     }
-    /*main*/
+    /*cotizador*/
     
     .no-padding {
         padding: 0;
     }
     
-    .main .row {
+    .cotizacion {
+        margin: 5rem 0;
+        height: 80rem;
+        @media (min-width: $media-768) {
+            margin: 12rem 0;
+        }
+    }
+    
+    .cotizacion .row {
         margin: 5rem 0;
         @media (min-width: $media-768) {
             margin: 12rem 0;
@@ -412,6 +439,15 @@
             display: block;
             margin-bottom: 3rem;
         }
+    }
+    
+    .download {
+        margin-top: 7rem;
+        @media (min-width: $media-768) {
+            height: 60rem;
+            margin-top: 12rem;
+        }
+        height: 27rem;
     }
     
     .project a,
@@ -480,21 +516,12 @@
             padding: 3rem;
         }
     }
-    
-    .slick-4 img {
-        @media (min-width: $media-768) {
-            width: 100%;
-            height: 50vh;
-        }
-        width: 100%;
-        height: 30vh;
-    }
     /**locaizacion**/
     
     .mapa {
         height: 35rem;
         @media (min-width: $media-768) {
-            height: 50rem;
+            height: 60rem;
         }
     }
     
@@ -503,7 +530,16 @@
     }
     
     .location {
+        @media (min-width: $media-768) {
+            margin-top: 20rem;
+        }
         text-align: center;
+    }
+    
+    .location h3 {
+        color: #ffffff;
+        text-align: left;
+        font-weight: 700;
     }
     
     .background-1 {
@@ -512,7 +548,7 @@
         background-position: center center;
         height: 35rem;
         @media (min-width: $media-768) {
-            height: 50rem;
+            height: 60rem;
         }
         padding: 7rem;
     }
@@ -540,7 +576,7 @@
         background-position: center center;
         height: 35rem;
         @media (min-width: $media-768) {
-            height: 50rem;
+            height: 60rem;
         }
         padding: 7rem;
     }
@@ -570,8 +606,8 @@
         background-color: $color-sec;
         height: 45rem;
         @media (min-width: $media-768) {
-            height: 50rem;
-            padding: 3rem;
+            height: 60rem;
+            padding: 6rem;
         }
         padding: 3rem;
         text-align: left;
@@ -666,11 +702,18 @@
             height: 35rem;
         }
         height: 15rem;
-        margin: 5rem auto;
+        margin: 0rem auto;
         padding: 2rem 3rem;
         border: 1px solid #D6D7D9;
         border-bottom: 2px solid $color-tri;
         background-color: #fff;
+    }
+    
+    .zone img {
+        margin: 0 auto;
+        @media (min-width: $media-768) {
+            margin: 0;
+        }
     }
     
     .zone i {
@@ -712,7 +755,7 @@
     article {
         background-color: #fff;
         @media (min-width: $media-768) {
-            padding: 5rem;
+            padding: 10rem 5rem;
         }
         padding: 1rem;
         text-align: center;
@@ -722,26 +765,28 @@
         color: $color-fir;
         font-size: 2rem;
         @media (min-width: $media-768) {
-            font-size: 4rem;
-            margin-left: 3rem;
+            font-size: 2.8rem;
+            padding: 3rem;
         }
-        margin-left: 1rem;
-        margin-bottom: 2rem;
+        padding: 2rem;
     }
     
     article h3 {
+        text-align: center;
         color: $color-fou;
+        padding: 1rem 0;
         font-size: 2rem;
         @media (min-width: $media-768) {
             font-size: 4rem;
+            text-align: left;
         }
     }
     
     .social-media img {
         width: 100%;
         height: 100%;
-        padding: 1rem;
-        margin: 1rem;
+        padding: 1rem 1rem 1rem 0;
+        margin: 0;
         max-width: 100%;
         filter: gray;
         -webkit-filter: grayscale(0);
@@ -770,15 +815,41 @@
     }
     
     .line {
+        @media (min-width: $media-768) {
+            font-size: 2rem;
+            text-align: left;
+            padding: 6rem 0;
+        }
+        padding: 3rem 0;
         border-bottom: 1px solid #ffffff;
+    }
+    
+    .line-2 {
+        @media (min-width: $media-768) {
+            font-size: 2rem;
+            text-align: left;
+            padding: 6rem 0;
+        }
+        padding: 3rem 0;
+        justify-content: space-between;
+    }
+    
+    .line-2 div {
+        padding: 0;
+    }
+    
+    .center {
+        text-align: center !important;
     }
     
     .footer p {
         font-size: 1.6rem;
         text-align: center;
         color: #ffffff;
+        font-weight: 700;
         @media (min-width: $media-768) {
             font-size: 2rem;
+            text-align: left;
         }
     }
     
@@ -805,6 +876,15 @@
         text-align: center;
     }
     
+    .footer a {
+        text-decoration: none;
+    }
+    
+    .footer a:hover {
+        text-decoration: initial;
+        color: $color-tri;
+    }
+    
     .footer input::-webkit-input-placeholder {
         color: $color-fir;
     }
@@ -829,6 +909,7 @@
             width: 15rem;
             right: 30px;
         }
+        display: block;
         position: relative;
     }
     
@@ -852,4 +933,13 @@
     
     .fourth {
         background-color: $color-fou;
+    }
+    
+    .hero img,
+    .slick-2 img {
+        object-fit: cover;
+    }
+    
+    .slick-list {
+        margin: 0 auto;
     }

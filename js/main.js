@@ -43,6 +43,14 @@ $(document).ready(function() {
         arrows: true,
         dots: false,
         autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+
+            }
+        }]
+
     });
 
     $('.multiple-items-2').slick({
@@ -53,6 +61,13 @@ $(document).ready(function() {
         arrows: true,
         dots: false,
         autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+
+            }
+        }]
     });
     //hiden menu mobile
 
