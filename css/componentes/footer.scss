@@ -1,0 +1,134 @@
+  /**footer**/
+  
+  footer {
+      background-color: $color-fir;
+      position: relative;
+      padding: 1rem 0;
+      .& {
+          margin: 5rem auto;
+          width: 120rem;
+          max-width: 100%;
+          margin: 0 auto;
+          min-height: 100%;
+          text-align: center;
+          @media (min-width: $media-768) {
+              text-align: left;
+          }
+          p {
+              font-size: 1.6rem;
+              text-align: center;
+              color: #ffffff;
+              font-weight: 700;
+              @media (min-width: $media-768) {
+                  font-size: 2rem;
+                  text-align: left;
+              }
+          }
+          input {
+              padding: 2rem 1rem;
+              font-size: 18px;
+              text-align: center;
+          }
+          a {
+              text-decoration: none;
+              &:hover {
+                  text-decoration: initial;
+                  color: $color-tri;
+              }
+          }
+          input::-webkit-input-placeholder {
+              color: $color-fir;
+          }
+          .last {
+              height: 2rem;
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              top: auto;
+          }
+      }
+  }
+  
+  .line {
+      @media (min-width: $media-768) {
+          font-size: 2rem;
+          text-align: left;
+          padding: 6rem 0;
+      }
+      padding: 3rem 0;
+      border-bottom: 1px solid #ffffff;
+      &-2 {
+          @media (min-width: $media-768) {
+              font-size: 2rem;
+              text-align: left;
+              padding: 6rem 0;
+          }
+          padding: 3rem 0;
+          justify-content: space-between;
+          div {
+              padding: 0;
+          }
+      }
+  }
+  
+  .boton-2 {
+      background-color: $color-sec;
+      padding: 2rem 4rem;
+      color: $color-fir;
+      text-transform: uppercase;
+      font-weight: 700;
+      width: 100%;
+      &:hover {
+          cursor: pointer;
+      }
+      text-decoration: none;
+      font-size: 18px;
+      display: inline-block;
+      border: none;
+  }
+  
+  .media {
+      width: 100%;
+      text-align: center;
+      @media (min-width: $media-768) {
+          position: absolute;
+          bottom: 70px;
+          top: auto;
+          left: auto;
+          height: 3rem;
+          width: 15rem;
+          right: 30px;
+      }
+      display: block;
+      position: relative;
+      i {
+          font-size: 3rem;
+          padding: 1rem;
+          color: #ffffff;
+      }
+  }
+  
+  .first {
+      background-color: #19A1C8;
+  }
+  
+  .second {
+      background-color: $color-sec;
+  }
+  
+  .third {
+      background-color: $color-tri;
+  }
+  
+  .fourth {
+      background-color: $color-fou;
+  }
+  
+  .hero img,
+  .slick-2 img {
+      object-fit: cover;
+  }
+  
+  .slick-list {
+      margin: 0 auto;
+  }

@@ -1,0 +1,134 @@
+  .slick img {
+      @media (min-width: $media-768) {
+          width: 100%;
+          height: 90vh;
+      }
+      width: 100%;
+      height: 55vh;
+  }
+  
+  .title {
+      position: absolute;
+      top: 25%;
+      left: 0;
+      height: 50%;
+      width: 100%;
+      &-1 {
+          position: absolute;
+          top: 30%;
+          left: 30%;
+          height: 100%;
+          width: 100%;
+          @media (min-width: $media-768) {
+              left: 60%;
+          }
+          p {
+              color: #ffffff;
+              font-size: 2rem;
+              font-weight: 700;
+              display: none;
+              margin-bottom: 3rem;
+              @media (min-width: $media-768) {
+                  display: block;
+              }
+          }
+          a {
+              text-decoration: none;
+              background-color: #ffffff;
+              color: $color-fir;
+              font-size: 1.6rem;
+              text-transform: uppercase;
+              font-weight: 700;
+              padding: 1rem 3rem;
+              &:hover {
+                  background-color: $color-fir;
+                  color: #ffffff;
+                  transition: background-color 0.3s ease;
+              }
+              @media (min-width: $media-768) {
+                  padding: 2rem 4.5rem;
+              }
+          }
+      }
+      p {
+          color: #ffffff;
+          font-size: 2rem;
+          font-weight: 700;
+          display: none;
+          margin-bottom: 3rem;
+          @media (min-width: $media-768) {
+              display: block;
+          }
+      }
+      a {
+          text-decoration: none;
+          background-color: #ffffff;
+          color: $color-fir;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          padding: 1.5rem 4.5rem;
+          &:hover {
+              background-color: $color-fir;
+              color: #ffffff;
+              transition: background-color 0.3s ease;
+          }
+          @media (min-width: $media-768) {
+              padding: 2rem 4.5rem;
+          }
+      }
+  }
+  
+  #slideshow {
+      position: relative;
+  }
+  
+  .whatsapp {
+      display: none;
+      color: #ffffff;
+      background-color: #25D366;
+      right: 0;
+      top: 50%;
+      font-size: 4rem;
+      padding: 0 1.2rem;
+      border-radius: 4px;
+      &:hover {
+          background-color: #000000;
+          color: #25D366;
+      }
+      @media (min-width: $media-768) {
+          display: block;
+          position: absolute;
+      }
+  }
+  
+  .multiple-items i,
+  .multiple-items-2 i {
+      display: none;
+      color: $color-fou;
+      right: 0;
+      top: 50%;
+      font-size: 3rem;
+      @media (min-width: $media-768) {
+          display: block;
+          position: absolute;
+      }
+  }
+  
+  .slick-2 img {
+      @media (min-width: $media-768) {
+          width: 100%;
+          height: 70vh;
+      }
+      width: 100%;
+      height: 55vh;
+  }
+  
+  .slick-3 img {
+      @media (min-width: $media-768) {
+          width: 100%;
+          height: 50vh;
+      }
+      width: 100%;
+      height: 30vh;
+  }

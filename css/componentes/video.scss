@@ -1,0 +1,79 @@
+  /*video*/
+  
+  .community {
+      position: relative;
+      text-align: center;
+      height: 50rem;
+      margin: 5rem 0;
+      @media (min-width: $media-768) {
+          text-align: left;
+          height: 80rem;
+          margin: 10rem 0;
+      }
+      h1 {
+          color: $color-fir;
+          text-transform: capitalize;
+          text-align: center;
+          @media (min-width: $media-768) {
+              text-align: left;
+          }
+      }
+      h4 {
+          color: $color-fir;
+          margin-top: 0;
+          text-align: center;
+          @media (min-width: $media-768) {
+              margin-top: 5rem;
+              text-align: left;
+          }
+      }
+      p {
+          color: $color-fir;
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 3rem;
+      }
+      ul {
+          margin-top: 3rem;
+          padding: 0;
+      }
+      a {
+          text-decoration: none;
+          background-color: $color-fir;
+          color: #ffffff;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          &:hover {
+              background-color: #ffffff;
+              color: $color-fir;
+              transition: background-color 0.3s ease;
+          }
+          border: 1px solid $color-fir;
+          padding: 1.5rem 4.5rem;
+          @media (min-width: $media-768) {
+              padding: 2rem 4.5rem;
+          }
+      }
+  }
+  
+  .comunidad {
+      @media (min-width: $media-768) {
+          padding-top: 20rem;
+      }
+  }
+  
+  .video {
+      max-width: 100%;
+      overflow: hidden;
+      max-height: 80rem;
+      margin-top: 3rem;
+      @media (min-width: $media-768) {
+          position: absolute;
+          right: 0;
+          top: 15%;
+          width: 50%;
+          height: 70%;
+          margin: 0;
+      }
+  }

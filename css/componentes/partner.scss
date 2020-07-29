@@ -1,0 +1,62 @@
+  /*Partners*/
+  
+  .social-zone,
+  .partner {
+      display: flex;
+  }
+  
+  .partner {
+      margin-top: 5rem;
+  }
+  
+  .zone {
+      text-align: left;
+      width: 25rem;
+      max-width: 100%;
+      @media (min-width: $media-768) {
+          height: 35rem;
+      }
+      height: 15rem;
+      margin: 0rem auto;
+      padding: 2rem 3rem;
+      border: 1px solid #D6D7D9;
+      border-bottom: 2px solid $color-tri;
+      background-color: #fff;
+      img {
+          margin: 0 auto;
+          @media (min-width: $media-768) {
+              margin: 0;
+          }
+      }
+      i {
+          margin-bottom: 3rem;
+          font-size: 5rem;
+          color: $color-tri;
+          display: block;
+      }
+  }
+  
+  .items {
+      width: 100%;
+      p {
+          font-size: 1.8rem;
+          color: $color-fir;
+          display: none;
+          @media (min-width: $media-768) {
+              display: block;
+          }
+      }
+  }
+  
+  .ally {
+      margin: 5rem auto;
+      width: 120rem;
+      max-width: 100%;
+      h3 {
+          text-align: center;
+          margin-top: 5rem;
+          @media (min-width: $media-768) {
+              font-size: 4.8rem;
+          }
+      }
+  }

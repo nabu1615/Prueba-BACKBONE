@@ -1,0 +1,56 @@
+  /*Globals*/
+  
+  ul {
+      list-style: none;
+  }
+  
+  h1 {
+      color: $color-h1;
+      font-size: 2.8rem;
+      text-align: left;
+      @media (min-width: $media-768) {
+          font-size: $font-size-h1;
+      }
+  }
+  
+  h2 {
+      color: $color-h2;
+      font-size: $font-size-h2;
+  }
+  
+  h3 {
+      color: $color-fir;
+      font-size: 2.4rem;
+      text-align: center;
+  }
+  
+  h4 {
+      color: $color-h1;
+      text-align: left;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+  }
+  
+  .row {
+      margin: 0;
+      padding: 0;
+      border: 0;
+  }
+  
+  .content-with {
+      text-align: center;
+  }
+  
+  body {
+      background-color: #F8F8F8;
+      font-family: $font-family;
+  }
+  
+  .no-padding {
+      padding: 0;
+  }
+  
+  .center {
+      text-align: center !important;
+  }

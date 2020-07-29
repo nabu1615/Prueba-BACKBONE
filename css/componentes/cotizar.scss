@@ -1,0 +1,80 @@
+ /*cotizador*/
+ 
+ .cotizacion {
+     margin: 5rem 0;
+     height: 80rem;
+     @media (min-width: $media-768) {
+         margin: 12rem 0;
+     }
+     .row {
+         margin: 5rem 0;
+         @media (min-width: $media-768) {
+             margin: 12rem 0;
+         }
+     }
+ }
+ 
+ .project {
+     background-color: $color-fou;
+     height: 70vh;
+     text-align: center;
+     @media (min-width: $media-768) {
+         padding: 5rem;
+         text-align: left;
+     }
+     p {
+         color: #ffffff;
+         font-size: 2rem;
+         font-weight: 700;
+         display: block;
+         @media (min-width: $media-768) {
+             display: block;
+             margin-bottom: 3rem;
+         }
+     }
+     a {
+         text-decoration: none;
+         background-color: #ffffff;
+         color: $color-fir;
+         font-size: 1.6rem;
+         text-transform: uppercase;
+         font-weight: 700;
+         &:hover {
+             background-color: $color-fir;
+             color: #ffffff;
+             transition: background-color 0.3s ease;
+         }
+         padding: 1.5rem 4.5rem;
+         @media (min-width: $media-768) {
+             padding: 2rem 4.5rem;
+         }
+     }
+     .row {
+         height: 100%;
+         @media (min-width: $media-768) {
+             padding: 7rem 2rem;
+             margin: 2rem 0;
+         }
+     }
+ }
+ 
+ .download {
+     margin-top: 20rem;
+     @media (min-width: $media-768) {
+         height: 60rem;
+         margin-top: 12rem;
+     }
+     height: 27rem;
+     a {
+         text-decoration: none;
+         background-color: #ffffff;
+         color: $color-fir;
+         font-size: 1.6rem;
+         text-transform: uppercase;
+         font-weight: 700;
+         padding: 1.5rem 4.5rem;
+         @media (min-width: $media-768) {
+             padding: 2rem 4.5rem;
+         }
+     }
+ }

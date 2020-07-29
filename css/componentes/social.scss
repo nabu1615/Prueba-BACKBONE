@@ -1,0 +1,26 @@
+  /*Zona Social*/
+  
+  .social {
+      margin: 5rem auto;
+      width: 120rem;
+      max-width: 100%;
+      a {
+          text-decoration: none;
+          background-color: $color-tri;
+          color: #ffffff;
+          font-size: 1.6rem;
+          width: 100%;
+          text-transform: uppercase;
+          font-weight: 700;
+          padding: 1rem;
+          @media (min-width: $media-768) {
+              padding: 2rem 4.5rem;
+          }
+      }
+      h3 {
+          @media (min-width: $media-768) {
+              font-size: 4rem;
+              padding: 3rem;
+          }
+      }
+  }

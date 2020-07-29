@@ -1,0 +1,107 @@
+/*Header*/
+
+.info {
+    background-color: $color-fir;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero li,
+.community li {
+    margin-bottom: 3rem;
+}
+
+.logo-lg {
+    @media (min-width: $media-768) {
+        position: absolute;
+        top: 0;
+        width: 10%;
+        left: 45%;
+        display: block;
+        box-shadow: 0 0 5rem #666;
+    }
+    display: none;
+}
+
+.logo-sm {
+    @media (min-width: $media-768) {
+        display: none;
+    }
+    position: relative;
+    top: 0;
+    width: 50%;
+    left: 25%;
+    display: block;
+}
+
+.info p {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1rem;
+    @media (min-width: $media-768) {
+        font-size: 1.6rem;
+    }
+}
+
+.info i {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-align: left;
+    font-size: 3rem;
+    color: #25d366;
+    @media (min-width: $media-768) {
+        display: none;
+    }
+}
+
+.menu {
+    background-color: $color-sec;
+    text-align: center;
+    color: $color-fir;
+    font-size: $font-size-h2;
+    @media (min-width: $media-768) {
+        display: none;
+    }
+}
+
+.navigation {
+    display: none;
+    text-align: center;
+    @media (min-width: $media-768) {
+        padding-left: 4rem;
+        display: block;
+    }
+}
+
+.navigation a {
+    display: block;
+    color: $color-fir;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    @media (min-width: $media-768) {
+        padding: 2rem 0;
+    }
+}
+
+.navigation ul li:last-of-type {
+    background-color: $color-sec;
+}
+
+.navigation a:hover {
+    color: $color-tri;
+    transition: background-color 0.3s ease;
+}
+
+.contact a:hover {
+    color: lighten($color-fir, 15%);
+}
