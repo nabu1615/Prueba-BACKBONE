@@ -11,7 +11,7 @@
         }).addTo(mymap);
 
         L.marker([3.459164, -76.519432]).addTo(mymap)
-            .bindPopup('Paraiso Central')
+            .bindPopup('<img src="img/log.JPG" alt="logo" class="logo-lg">')
             .openPopup('Paraiso Central');
 
     }); //DOM CONTENT LOADED

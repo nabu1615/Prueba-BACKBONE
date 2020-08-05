@@ -359,22 +359,57 @@ html {
   width: 100%;
 }
 
+.slickshow {
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
 .hero li,
 .community li {
   margin-bottom: 3rem;
 }
 
+.whatsapp {
+  display: none;
+  color: #ffffff;
+  background-color: #25D366;
+  right: 0;
+  top: 50%;
+  font-size: 4rem;
+  padding: 0 1.2rem;
+  border-radius: 4px;
+  z-index: 1000000;
+}
+.whatsapp:hover {
+  background-color: #000000;
+  color: #25D366;
+}
+@media (min-width: 768px) {
+  .whatsapp {
+    display: block;
+    position: fixed;
+  }
+}
+
 .logo-lg {
   display: none;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 @media (min-width: 768px) {
   .logo-lg {
     position: absolute;
-    top: 0;
-    width: 10%;
-    left: 45%;
+    top: 44px;
+    width: 13%;
+    left: 43.5%;
     display: block;
-    box-shadow: 0 0 5rem #666;
   }
 }
 
@@ -435,6 +470,7 @@ html {
 .navigation {
   display: none;
   text-align: center;
+  background-color: #fff;
 }
 @media (min-width: 768px) {
   .navigation {
@@ -453,7 +489,7 @@ html {
 }
 @media (min-width: 768px) {
   .navigation a {
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 }
 
@@ -623,27 +659,6 @@ body {
 
 #slideshow {
   position: relative;
-}
-
-.whatsapp {
-  display: none;
-  color: #ffffff;
-  background-color: #25D366;
-  right: 0;
-  top: 50%;
-  font-size: 4rem;
-  padding: 0 1.2rem;
-  border-radius: 4px;
-}
-.whatsapp:hover {
-  background-color: #000000;
-  color: #25D366;
-}
-@media (min-width: 768px) {
-  .whatsapp {
-    display: block;
-    position: absolute;
-  }
 }
 
 .multiple-items i,
@@ -900,6 +915,7 @@ body {
 /**locaizacion**/
 .mapa {
   height: 35rem;
+  position: sticky !important;
 }
 @media (min-width: 768px) {
   .mapa {

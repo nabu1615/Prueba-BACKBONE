@@ -2,6 +2,7 @@
  
  .mapa {
      height: 35rem;
+     position: sticky !important;
      @media (min-width: $media-768) {
          height: 60rem;
      }

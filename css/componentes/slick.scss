@@ -83,25 +83,6 @@
       position: relative;
   }
   
-  .whatsapp {
-      display: none;
-      color: #ffffff;
-      background-color: #25D366;
-      right: 0;
-      top: 50%;
-      font-size: 4rem;
-      padding: 0 1.2rem;
-      border-radius: 4px;
-      &:hover {
-          background-color: #000000;
-          color: #25D366;
-      }
-      @media (min-width: $media-768) {
-          display: block;
-          position: absolute;
-      }
-  }
-  
   .multiple-items i,
   .multiple-items-2 i {
       display: none;
