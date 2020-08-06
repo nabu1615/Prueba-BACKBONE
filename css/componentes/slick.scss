@@ -1,10 +1,27 @@
-  .slick img {
-      @media (min-width: $media-768) {
-          width: 100%;
-          height: 90vh;
+  .slick {
+      span {
+          text-align: left;
+          color: #ffffff;
+          position: absolute;
+          top: auto;
+          bottom: 3rem;
+          left: 14.5rem;
+          font-size: 1.4rem;
+          font-weight: 500;
+          display: none;
+          width: 72.5rem;
+          @media (min-width: $media-768) {
+              display: block;
+          }
       }
-      width: 100%;
-      height: 55vh;
+      img {
+          @media (min-width: $media-768) {
+              width: 100%;
+              height: 100vh;
+          }
+          width: 100%;
+          height: 55vh;
+      }
   }
   
   .title {
@@ -20,7 +37,10 @@
           height: 100%;
           width: 100%;
           @media (min-width: $media-768) {
-              left: 60%;
+              bottom: 5.2rem;
+              right: 9.8rem;
+              top: 50%;
+              left: 104.8rem;
           }
           p {
               color: #ffffff;
@@ -33,12 +53,15 @@
               }
           }
           a {
+              text-align: center;
               text-decoration: none;
               background-color: #ffffff;
               color: $color-fir;
-              font-size: 1.6rem;
+              font-size: 2rem;
               text-transform: uppercase;
               font-weight: 700;
+              display: inline-block;
+              width: 35.4rem;
               padding: 1rem 3rem;
               &:hover {
                   background-color: $color-fir;
@@ -83,8 +106,45 @@
       position: relative;
   }
   
+  .slickshow {
+      .title {
+          img {
+              margin: 0;
+              @media (min-width: $media-768) {
+                  width: 9.4rem;
+                  height: 6.4rem;
+              }
+              width: 5rem;
+              height: 3rem;
+          }
+          a {
+              text-decoration: none;
+              background-color: $color-fir;
+              color: #ffffff;
+              font-size: 1.8rem;
+              text-transform: uppercase;
+              font-weight: 700;
+              display: inline-block;
+              width: 35rem;
+              text-align: center;
+              &:hover {
+                  background-color: #ffffff;
+                  color: $color-fir;
+                  transition: background-color 0.3s ease;
+              }
+              border: none;
+              padding: 1.5rem 4.5rem;
+              @media (min-width: $media-768) {
+                  padding: 2.2rem;
+                  margin-right: 1.9rem;
+              }
+          }
+      }
+  }
+  
   .multiple-items i,
-  .multiple-items-2 i {
+  .multiple-items-2 i,
+  .mmultiple-items-3 i {
       display: none;
       color: $color-fou;
       right: 0;
@@ -99,7 +159,7 @@
   .slick-2 img {
       @media (min-width: $media-768) {
           width: 100%;
-          height: 70vh;
+          height: 82.9rem;
       }
       width: 100%;
       height: 55vh;
@@ -108,8 +168,24 @@
   .slick-3 img {
       @media (min-width: $media-768) {
           width: 100%;
-          height: 50vh;
+          height: 72.2vh;
       }
       width: 100%;
       height: 30vh;
+      .slick-dots li button:before {
+          font-family: 'slick';
+          font-size: 40px;
+          line-height: 20px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          content: '•';
+          text-align: center;
+          color: $color-fir !important;
+      }
+      .slick-dots li.slick-active button:before {
+          color: $color-fou !important;
+      }
   }

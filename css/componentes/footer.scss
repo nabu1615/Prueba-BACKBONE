@@ -8,23 +8,25 @@
   
   .footer {
       margin: 5rem auto;
-      width: 120rem;
-      max-width: 100%;
-      margin: 0 auto;
       min-height: 100%;
       text-align: center;
       @media (min-width: $media-768) {
           text-align: left;
       }
       p {
-          font-size: 1.6rem;
+          font-size: 2.4rem;
           text-align: center;
           color: #ffffff;
           font-weight: 700;
           @media (min-width: $media-768) {
-              font-size: 2rem;
+              font-size: 2.4rem;
               text-align: left;
           }
+      }
+      label {
+          color: #ffffff;
+          font-size: 1.8rem;
+          font-weight: 700;
       }
       input {
           padding: 2rem 1rem;
@@ -41,13 +43,14 @@
       input::-webkit-input-placeholder {
           color: $color-fir;
       }
-      .last {
-          height: 2rem;
-          width: 100%;
-          position: absolute;
-          bottom: 0;
-          top: auto;
-      }
+  }
+  
+  .last {
+      height: 1rem;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      top: auto;
   }
   
   .line {
@@ -132,4 +135,9 @@
   
   .slick-list {
       margin: 0 auto;
+  }
+  
+  .cbox {
+      height: 3rem;
+      width: 3rem;
   }

@@ -19,13 +19,14 @@
      height: 70vh;
      text-align: center;
      @media (min-width: $media-768) {
-         padding: 5rem;
+         padding: 12.2rem 13.6rem;
+         height: 82.9rem;
          text-align: left;
      }
      p {
          color: #ffffff;
-         font-size: 2rem;
-         font-weight: 700;
+         font-size: 3rem;
+         font-weight: 500;
          display: block;
          @media (min-width: $media-768) {
              display: block;
@@ -33,10 +34,13 @@
          }
      }
      a {
+         text-align: center;
          text-decoration: none;
          background-color: #ffffff;
          color: $color-fir;
          font-size: 1.6rem;
+         display: inline-block;
+         width: 50%;
          text-transform: uppercase;
          font-weight: 700;
          &:hover {
@@ -52,16 +56,16 @@
      .row {
          height: 100%;
          @media (min-width: $media-768) {
-             padding: 7rem 2rem;
              margin: 2rem 0;
          }
      }
  }
  
  .download {
+     position: relative;
      margin-top: 20rem;
      @media (min-width: $media-768) {
-         height: 60rem;
+         height: 72.2rem;
          margin-top: 12rem;
      }
      height: 27rem;
@@ -76,5 +80,12 @@
          @media (min-width: $media-768) {
              padding: 2rem 4.5rem;
          }
+     }
+     span {
+         font-size: 1.4rem;
+         color: #ffffff;
+         position: absolute;
+         left: 4rem;
+         top: 2.6rem;
      }
  }

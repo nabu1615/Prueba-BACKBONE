@@ -1,19 +1,27 @@
   /*video*/
   
   .community {
+      background-color: #ffffff;
       position: relative;
       text-align: center;
       height: 50rem;
       margin: 5rem 0;
       @media (min-width: $media-768) {
           text-align: left;
-          height: 80rem;
-          margin: 10rem 0;
+          height: 86.3rem;
+      }
+      .row {
+          padding: 0;
+      }
+      .col-12 {
+          padding: 0;
       }
       h1 {
           color: $color-fir;
           text-transform: capitalize;
           text-align: center;
+          margin: 0;
+          padding: 0;
           @media (min-width: $media-768) {
               text-align: left;
           }
@@ -22,6 +30,7 @@
           color: $color-fir;
           margin-top: 0;
           text-align: center;
+          padding: 0;
           @media (min-width: $media-768) {
               margin-top: 5rem;
               text-align: left;
@@ -29,9 +38,10 @@
       }
       p {
           color: $color-fir;
-          font-size: 2rem;
-          font-weight: 700;
+          font-size: 3rem;
+          font-weight: 500;
           margin-bottom: 3rem;
+          padding: 0;
       }
       ul {
           margin-top: 3rem;
@@ -41,9 +51,11 @@
           text-decoration: none;
           background-color: $color-fir;
           color: #ffffff;
-          font-size: 1.6rem;
+          font-size: 1.8rem;
           text-transform: uppercase;
           font-weight: 700;
+          display: inline-block;
+          width: 35rem;
           &:hover {
               background-color: #ffffff;
               color: $color-fir;
@@ -52,7 +64,8 @@
           border: 1px solid $color-fir;
           padding: 1.5rem 4.5rem;
           @media (min-width: $media-768) {
-              padding: 2rem 4.5rem;
+              padding: 2.2rem;
+              margin-right: 1.9rem;
           }
       }
   }
@@ -68,12 +81,21 @@
       overflow: hidden;
       max-height: 80rem;
       margin-top: 3rem;
+      position: relative;
       @media (min-width: $media-768) {
           position: absolute;
           right: 0;
           top: 15%;
           width: 50%;
-          height: 70%;
+          height: 64.4rem;
           margin: 0;
       }
+  }
+  
+  .middle {
+      @media (min-width: $media-768) {
+          display: flex;
+      }
+      text-align: center;
+      display: inline;
   }

@@ -14,11 +14,14 @@
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
+    @media (min-width: $media-768) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    background-color: #fff;
 }
 
 .hero li,
@@ -26,23 +29,42 @@ header {
     margin-bottom: 3rem;
 }
 
-.whatsapp {
-    display: none;
-    color: #ffffff;
-    background-color: #25D366;
+.contacto {
     right: 0;
     top: 50%;
-    font-size: 4rem;
-    padding: 0 1.2rem;
-    border-radius: 4px;
+    position: fixed;
     z-index: 1000000;
-    &:hover {
-        background-color: #000000;
-        color: #25D366;
-    }
-    @media (min-width: $media-768) {
-        display: block;
-        position: fixed;
+    .whatsapp {
+        display: none;
+        color: #ffffff;
+        background-color: #25D366;
+        font-size: 4rem;
+        padding: 0 1.2rem;
+        border-top-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+        &:hover {
+            background-color: #000000;
+            color: #25D366;
+        }
+        @media (min-width: $media-768) {
+            display: block;
+        }
+        &-2 {
+            display: none;
+            background-color: #000000;
+            color: #25D366;
+            &:hover {
+                color: #ffffff;
+                background-color: #25D366;
+            }
+            font-size: 4rem;
+            padding: 0 1.2rem;
+            border-bottom-left-radius: 4rem;
+            border-bottom-right-radius: 4rem;
+            @media (min-width: $media-768) {
+                display: block;
+            }
+        }
     }
 }
 
@@ -55,8 +77,8 @@ header {
         display: block;
     }
     display: none;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .logo-sm {
@@ -73,6 +95,7 @@ header {
 .info p {
     color: #ffffff;
     text-transform: uppercase;
+    font-weight: 500;
     margin: 1rem 0;
     font-weight: 700;
     text-align: center;
@@ -80,6 +103,16 @@ header {
     @media (min-width: $media-768) {
         font-size: 1.6rem;
     }
+}
+
+.dir {
+    text-align: left !important;
+    padding-left: 7.1rem;
+}
+
+.tel {
+    text-align: right !important;
+    padding-right: 7.1rem;
 }
 
 .info i {
@@ -110,7 +143,6 @@ header {
     text-align: center;
     background-color: #fff;
     @media (min-width: $media-768) {
-        padding-left: 4rem;
         display: block;
     }
 }
@@ -138,4 +170,20 @@ header {
 
 .contact a:hover {
     color: lighten($color-fir, 15%);
+}
+
+.separe {
+    background-color: $color-tri;
+    a {
+        color: #ffffff;
+    }
+    a:hover {
+        color: $color-fir;
+    }
+}
+
+.container {
+    width: 162.6rem !important;
+    max-width: 100%;
+    margin: 0 auto;
 }

@@ -2,13 +2,11 @@
   
   .social {
       margin: 5rem auto;
-      width: 120rem;
-      max-width: 100%;
       a {
           text-decoration: none;
           background-color: $color-tri;
           color: #ffffff;
-          font-size: 1.6rem;
+          font-size: 2rem;
           width: 100%;
           text-transform: uppercase;
           font-weight: 700;
@@ -22,5 +20,11 @@
               font-size: 4rem;
               padding: 3rem;
           }
+      }
+      div {
+          text-align: center;
+      }
+      p {
+          text-align: left;
       }
   }

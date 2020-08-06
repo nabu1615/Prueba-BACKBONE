@@ -53,6 +53,7 @@ $(document).ready(function() {
 
     });
 
+
     $('.multiple-items-2').slick({
         infinite: true,
         slidesToShow: 5,
@@ -68,6 +69,23 @@ $(document).ready(function() {
 
             }
         }]
+    });
+    $('.multiple-items-3').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        dots: false,
+        autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+
+            }
+        }]
+
     });
     //hiden menu mobile
 
