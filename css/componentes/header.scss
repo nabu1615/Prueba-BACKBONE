@@ -43,7 +43,7 @@ header {
         border-top-left-radius: 4rem;
         border-top-right-radius: 4rem;
         &:hover {
-            background-color: #000000;
+            background-color: #ffffff;
             color: #25D366;
         }
         @media (min-width: $media-768) {
@@ -54,8 +54,7 @@ header {
             background-color: #000000;
             color: #25D366;
             &:hover {
-                color: #ffffff;
-                background-color: #25D366;
+                background-color: #ffffff;
             }
             font-size: 4rem;
             padding: 0 1.2rem;

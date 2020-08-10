@@ -1,0 +1,110 @@
+.contacto-banner {
+    @media (min-width: $media-768) {
+        margin-top: 14.1rem;
+        height: 41.5rem;
+        padding-top: 18rem;
+    }
+    padding-top: 5rem;
+    height: 100%;
+    text-align: start;
+    p {
+        color: $color-fou;
+        font-size: 2.4rem;
+        @media (min-width: $media-768) {
+            font-size: 4rem;
+            width: 70%;
+        }
+    }
+    h4 {
+        color: $color-fir;
+        text-align: left;
+        font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 6rem;
+        margin: 0;
+        text-align: left;
+    }
+}
+
+.contacto-location {
+    margin-top: 5rem;
+    .background-4 {
+        height: 100%;
+        margin-bottom: 5rem;
+        @media (min-width: $media-768) {
+            height: 80.7rem;
+            padding: 6rem;
+        }
+        h3 {
+            color: $color-fou;
+        }
+        p {
+            text-align: left;
+            font-size: 2.4rem;
+            color: $color-fir;
+        }
+        label {
+            color: $color-fir;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 1.8rem;
+            @media (min-width: $media-768) {
+                font-size: 1.8rem;
+            }
+        }
+        input,
+        select {
+            width: 100%;
+            font-size: 1.6rem;
+            @media (min-width: $media-768) {
+                font-size: 2rem;
+            }
+            font-weight: 700;
+            background-color: #D6D7D9;
+            padding: 1.8rem 0.5rem;
+        }
+        input::-webkit-input-placeholder {
+            color: #313C42;
+        }
+        select::-webkit-input-placeholder {
+            color: #313C42;
+        }
+        .boton {
+            text-align: center;
+            background-color: $color-fou;
+            color: #ffffff;
+            &:hover {
+                cursor: pointer;
+                background-color: #f9f9f9;
+                color: $color-fou;
+            }
+            border: 1px solid $color-fou;
+        }
+        .cbox {
+            margin-top: 1.8rem;
+        }
+    }
+}
+
+.tramites {
+    margin: 5rem auto;
+    @media (min-width: $media-768) {
+        margin-top: 13.7rem;
+        margin-bottom: 13.7rem;
+    }
+    text-align: center;
+    img {
+        max-width: 100%;
+        @media (min-width: $media-768) {
+            margin-top: 9rem;
+        }
+    }
+    p {
+        color: $color-fou;
+        font-size: 2.4rem;
+        @media (min-width: $media-768) {
+            font-size: 4rem;
+        }
+    }
+}

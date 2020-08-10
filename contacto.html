@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Paraiso Central</title>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="contacto">
+            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="whatsapp-2"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <img src="img/log.JPG" alt="logo" class="logo-sm">
+        <div class="info">
+            <div>
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <p class="dir">Sala de ventas Cra 4 # 26a 50 - Cali, Colombia</p>
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-2">
+                        <p class="tel">Teléfonos (57-1) 3213708734 (57-1) 3213708734</p>
+                    </div>
+                    <div class="col-12">
+                        <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Informacion de contacto-->
+        <div class="row menu">
+            <div class="col-12">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!--Menu mobile-->
+
+        <nav class="navigation">
+            <img src="img/log.JPG" alt="logo" class="logo-lg">
+            <ul class="row">
+                <li class="col-12 col-md">
+                    <a href="#">Inicio</a>
+                </li>
+                <li class="col-12 col-md">
+                    <a href="#">Apartamentos</a>
+                </li>
+                <li class="col-12 col-md">
+                    <a href="#">El Proyecto</a>
+                </li>
+                <li class="col-12 col-md">
+                    <a href="#">Zonan comunes</a>
+                </li>
+                <li class="col-12 col-md offset-md-2">
+                    <a href="#">Ubicación</a>
+                </li>
+                <li class="col-12 col-md">
+                    <a href="#">Nosotros</a>
+                </li>
+                <li class="col-12 col-md separe">
+                    <a href="#">Separe en línea</a>
+                </li>
+                <li class="col-12 col-md contact">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Navegacion-->
+
+    </header>
+    <main>
+        <section class="container contacto-banner">
+            <h4>CONTACTO</h4>
+            <h3>Separe Su Inmueble</h3>
+            <p>Contáctenos a través de nuestros diferentes canales de ventas Lorem ipsum donor.</p>
+        </section>
+        <section class="location contacto-location">
+            <div class="row align-items-center">
+                <div class="no-padding col-12 col-md-6"></div>
+                <div class="no-padding col-12 col-md-6"></div>
+            </div>
+            <div class="row">
+                <div class="no-padding background-4 col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Solicite una cita</h3>
+                        </div>
+                        <div class="col-12">
+                            <p>Llene el siguiente formulario para visitar nuestra sala de ventas. La confirmación de la cita llegará a su correo Electrónico</p>
+                        </div>
+                        <div class="col-12 col-md-6 mt-3">
+                            <input type="number" id="torre" name="torre" placeholder="En que torre esta interesado?">
+                        </div>
+                        <div class="col-12 col-md-6 mt-3">
+                            <select id="apartamento" required>
+                                <option value="">En que piso esta interesado?</option>
+                                <option value="ETI">201</option>
+                                <option value="PUL">301</option>
+                                <option value="ESF">401</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input type="text" id="tipoCita" name="torre" placeholder="Quiero mi cita por un medio digital">
+                        </div>
+                        <div class="col-12 col-md-6 mt-3">
+                            <input type="text" id="name" name="name" placeholder="Nombre Y Apellido*">
+                        </div>
+                        <div class="col-12 col-md-6 mt-3">
+                            <input type="tel" id="phone" name="phone" placeholder="Número De Teléfono*">
+                        </div>
+                        <div class="col-12 col-md-6 mt-3">
+                            <input type="email" id="email" name="email" placeholder="Correo Eletrónico*">
+                        </div>
+                        <div class="col-12 col-md-6 mt-3">
+                            <input type="date" id="citaFecha">
+                        </div>
+                        <div class="col-2 col-md-1 mt-3">
+                            <input type="checkbox" id="cbox3" value="second_checkbox" class="cbox">
+                        </div>
+                        <div class="col-9 col-md-11 mt-3">
+                            <label for="cbox2">Acepto los términos y condiciones</label>
+                        </div>
+                        <div class="col-12 col-md-6 mt-3">
+                            <input type="submit" name="submit" id="submit" value="SOLICITAR" class="boton">
+                        </div>
+                    </div>
+                </div>
+                <div class="no-padding background-3 col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Contáctenos</h3>
+                        </div>
+                        <div class="col-12">
+                            <p>Es tu oportunidad de invertir. ¡No te quedes por fuera! Los apartamentos de Proyecto Paraíso son una excelente oportunidad de negocio.</p>
+                        </div>
+                        <div class="col-12">
+                            <span>*Campos Obligatorios</span>
+                        </div>
+                        <div class="col-12 col-md-6 mt-3">
+                            <input type="text" id="name" name="name" placeholder="Nombre Y Apellido*">
+                        </div>
+                        <div class="col-12 col-md-6 mt-3">
+                            <input type="tel" id="phone" name="phone" placeholder="Número De Teléfono*">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input type="email" id="email" name="email" placeholder="Correo Eletrónico*">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <textarea name="message" id="message" placeholder="Mensaje*"></textarea>
+                        </div>
+                        <div class="col-2 col-md-1 mt-3">
+                            <input type="checkbox" id="cbox1" value="first_checkbox" class="cbox">
+                        </div>
+                        <div class="col-9 col-md-11 mt-3">
+                            <label for="cbox1">Acepto la política de tratamiento de mis datos personales</label>
+                        </div>
+                        <div class="col-2 col-md-1 mt-3">
+                            <input type="checkbox" id="cbox2 " value="second_checkbox" class="cbox">
+                        </div>
+                        <div class="col-9 col-md-11 mt-3">
+                            <label for="cbox2">Acepto los términos y condiciones</label>
+                        </div>
+                        <div class="col-12 col-md-6 mt-3">
+                            <input type="submit" name="submit" id="submit" value="ENVIAR" class="boton">
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--Locaizacion del proyecto y formulario de contacto-->
+
+        <section class="tramites container">
+            <h3>Descripción Básica Para Los Trámites</h3>
+            <p>Que debe realizar el cliente durante el proceso de compra del inmueble.</p>
+            <img src="img/tramites.png" alt="tramites">
+        </section>
+        <article>
+            <div class="redes container">
+
+                <div class="row">
+                    <div class="co-12 col-md-8 no-padding">
+                        <h3>Siga las redes del Proyecto Paraíso</h3>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <ul class="juicer-feed" data-feed-id="backbonedigital">
+                    <h1 class="referral"></h1>
+                </ul>
+
+            </div>
+        </article>
+        <!--Articuos y enlaces a publicaciones en redes-->
+    </main>
+
+    <footer>
+        <div class="footer container">
+            <div class="row line">
+                <div class="col-md-7 col-12 no-padding">
+                    <p>Suscríbase a nuestro boletín para estar enterado de las últimas noticias del proyecto paraíso</p>
+                </div>
+                <div class="col-md-3 col-12 no-padding">
+                    <input type="email" id="email-2" name="email-2" placeholder="Ingrese su correo electrónico">
+                </div>
+                <div class="col-md-2 col-12 no-padding">
+                    <input type="submit" name="submit-2" id="submit-2" value="SUSCRIBIRME" class="boton-2">
+                </div>
+                <div class="col-1 offset-md-7 mt-5 no-padding">
+                    <input type="checkbox" id="cbox3" value="third_checkbox" class="cbox">
+                </div>
+                <div class="col-md-4 col-11 mt-5">
+                    <label for="cbox3">Acepto los términos y condiciones</label>
+                </div>
+            </div>
+            <div class="row line-2">
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="img/logo-3.png" alt="Logo">
+                        </div>
+                        <div class="col-12">
+                            <p>Un proyecto de canales desarrolladores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Apartamentos</p>
+                        </div>
+                        <div class="col-12">
+                            <p>Teléfonos</p>
+                        </div>
+                        <div class="col-12">
+                            <p>(57-1)3213708734<br>(57-1)3213708734</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>El Proyecto</p>
+                        </div>
+                        <div class="col-12">
+                            <p>Sala De Ventas</p>
+                        </div>
+                        <div class="col-12">
+                            <p>Sala de ventas Cra 4 # 26a 50 <br> Cali, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <a href="#">
+                        <p>Ubicación</p>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#">
+                        <p class="center">Amenidades</p>
+                    </a>
+                </div>
+                <div class="col-md-1">
+                    <a href="#">
+                        <p>Nosotros</p>
+                    </a>
+                </div>
+                <div class="col-md-1">
+                    <a href="#">
+                        <p>Contacto</p>
+                    </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="row last">
+            <div class="col 3 first"></div>
+            <div class="col 3 second"></div>
+            <div class="col 3 third"></div>
+            <div class="col 3 fourth"></div>
+        </div>
+    </footer>
+
+
+    <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://kit.fontawesome.com/1f330f959c.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

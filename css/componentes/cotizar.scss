@@ -2,9 +2,10 @@
  
  .cotizacion {
      margin: 5rem 0;
-     height: 80rem;
+     height: 100%;
      @media (min-width: $media-768) {
          margin: 12rem 0;
+         height: 80rem;
      }
      .row {
          margin: 5rem 0;
@@ -16,7 +17,7 @@
  
  .project {
      background-color: $color-fou;
-     height: 70vh;
+     height: 100%;
      text-align: center;
      @media (min-width: $media-768) {
          padding: 12.2rem 13.6rem;
@@ -63,20 +64,21 @@
  
  .download {
      position: relative;
-     margin-top: 20rem;
+     margin-top: 2rem;
      @media (min-width: $media-768) {
          height: 72.2rem;
          margin-top: 12rem;
      }
      height: 27rem;
      a {
+         width: 50%;
          text-decoration: none;
          background-color: #ffffff;
          color: $color-fir;
          font-size: 1.6rem;
          text-transform: uppercase;
          font-weight: 700;
-         padding: 1.5rem 4.5rem;
+         padding: 1rem 1rem;
          @media (min-width: $media-768) {
              padding: 2rem 4.5rem;
          }

@@ -72,11 +72,11 @@ $(document).ready(function() {
     });
     $('.multiple-items-3').slick({
         infinite: true,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         arrows: false,
-        dots: false,
+        dots: true,
         autoplaySpeed: 2000,
         responsive: [{
             breakpoint: 768,

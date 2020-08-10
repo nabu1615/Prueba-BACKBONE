@@ -2,6 +2,13 @@
  
  .redes {
      margin: 5rem auto;
+     margin-bottom: 10rem;
+     ul {
+         @media (min-width: $media-768) {
+             height: 81vh;
+         }
+         height: 45rem;
+     }
  }
  
  article {

@@ -398,7 +398,7 @@ header {
   border-top-right-radius: 4rem;
 }
 .contacto .whatsapp:hover {
-  background-color: #000000;
+  background-color: #ffffff;
   color: #25D366;
 }
 @media (min-width: 768px) {
@@ -416,8 +416,7 @@ header {
   border-bottom-right-radius: 4rem;
 }
 .contacto .whatsapp-2:hover {
-  color: #ffffff;
-  background-color: #25D366;
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .contacto .whatsapp-2 {
@@ -854,7 +853,7 @@ body {
   background-color: #ffffff;
   position: relative;
   text-align: center;
-  height: 50rem;
+  height: 100%;
   margin: 5rem 0;
 }
 @media (min-width: 768px) {
@@ -936,7 +935,6 @@ body {
 
 .video {
   max-width: 100%;
-  overflow: hidden;
   max-height: 80rem;
   margin-top: 3rem;
   position: relative;
@@ -944,6 +942,7 @@ body {
 @media (min-width: 768px) {
   .video {
     position: absolute;
+    overflow: hidden;
     right: 0;
     top: 15%;
     width: 50%;
@@ -965,11 +964,12 @@ body {
 /*cotizador*/
 .cotizacion {
   margin: 5rem 0;
-  height: 80rem;
+  height: 100%;
 }
 @media (min-width: 768px) {
   .cotizacion {
     margin: 12rem 0;
+    height: 80rem;
   }
 }
 .cotizacion .row {
@@ -983,7 +983,7 @@ body {
 
 .project {
   background-color: #4422B1;
-  height: 70vh;
+  height: 100%;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -1038,7 +1038,7 @@ body {
 
 .download {
   position: relative;
-  margin-top: 20rem;
+  margin-top: 2rem;
   height: 27rem;
 }
 @media (min-width: 768px) {
@@ -1048,13 +1048,14 @@ body {
   }
 }
 .download a {
+  width: 50%;
   text-decoration: none;
   background-color: #ffffff;
   color: #000552;
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 1.5rem 4.5rem;
+  padding: 1rem 1rem;
 }
 @media (min-width: 768px) {
   .download a {
@@ -1125,7 +1126,7 @@ body {
 }
 @media (min-width: 768px) {
   .location {
-    margin-top: 20rem;
+    margin-top: 10rem;
   }
 }
 .location .row {
@@ -1139,7 +1140,6 @@ body {
 
 .background-1 {
   position: relative;
-  justify-content: center;
   background-image: url(../img/hero-3.jpg);
   background-size: cover;
   background-position: center center;
@@ -1148,6 +1148,7 @@ body {
 @media (min-width: 768px) {
   .background-1 {
     height: 80.7rem;
+    justify-content: center;
   }
 }
 .background-1 a {
@@ -1173,9 +1174,23 @@ body {
   left: 4.8rem;
   font-size: 1.4rem;
   font-weight: 500;
+  display: none;
+}
+@media (min-width: 768px) {
+  .background-1 p {
+    display: block;
+  }
 }
 .background-1 h2 {
-  padding: 29.9rem 25.4rem 0 25.4rem;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .background-1 h2 {
+    margin: 0 auto;
+    margin-top: 30rem;
+    height: 21rem;
+    width: 45rem;
+  }
 }
 .background-1 div {
   padding-top: 4rem;
@@ -1230,7 +1245,7 @@ body {
 
 .background-3 {
   background-color: #FEBE42;
-  height: 45rem;
+  height: 100%;
   padding: 3rem;
   text-align: left;
 }
@@ -1242,19 +1257,18 @@ body {
 }
 .background-3 label {
   color: #000552;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 700;
+}
+@media (min-width: 768px) {
+  .background-3 label {
+    font-size: 1.8rem;
+  }
 }
 .background-3 p {
   color: #000552;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  display: none;
-}
-@media (min-width: 768px) {
-  .background-3 p {
-    display: block;
-  }
 }
 .background-3 span {
   color: #000552;
@@ -1315,10 +1329,6 @@ select {
   border: none;
 }
 
-.cbox {
-  height: 3rem;
-}
-
 /*Partners*/
 .social-zone,
 .partner {
@@ -1331,7 +1341,7 @@ select {
 
 .ver-todas {
   padding: 7.1rem 0;
-  margin: 0;
+  margin: 7rem 0 0 0;
 }
 
 .zone {
@@ -1413,16 +1423,21 @@ select {
 }
 
 .zone-2 {
-  width: 25rem;
-  max-width: 95%;
-  height: 15rem;
-  padding: 9.4rem 3.45rem;
+  width: 100%;
+  max-width: 100%;
+  height: 32rem;
+  padding: 4rem;
 }
 .zone-2 span {
   text-align: center;
-  font-size: 7rem;
+  font-size: 4rem;
   color: #ffffff;
   opacity: 40%;
+}
+@media (min-width: 768px) {
+  .zone-2 span {
+    font-size: 7rem;
+  }
 }
 .zone-2 p {
   text-align: center;
@@ -1433,12 +1448,14 @@ select {
   .zone-2 {
     height: 68.7rem;
     width: 46.4rem;
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 9.4rem 3.45rem;
   }
 }
 .zone-2 img {
   margin: 0 auto;
   border: 0;
-  width: 8.7rem;
   max-width: 100%;
   height: 13rem;
 }
@@ -1471,6 +1488,15 @@ select {
 /*article*/
 .redes {
   margin: 5rem auto;
+  margin-bottom: 10rem;
+}
+.redes ul {
+  height: 45rem;
+}
+@media (min-width: 768px) {
+  .redes ul {
+    height: 81vh;
+  }
 }
 
 article {
@@ -1556,6 +1582,7 @@ footer {
   color: #ffffff;
   font-size: 1.8rem;
   font-weight: 700;
+  text-align: start;
 }
 .footer input {
   padding: 2rem 1rem;
@@ -1673,5 +1700,133 @@ footer {
 
 .cbox {
   height: 3rem;
-  width: 3rem;
+  width: 3rem !important;
+}
+
+.contacto-banner {
+  padding-top: 5rem;
+  height: 100%;
+  text-align: start;
+}
+@media (min-width: 768px) {
+  .contacto-banner {
+    margin-top: 14.1rem;
+    height: 41.5rem;
+    padding-top: 18rem;
+  }
+}
+.contacto-banner p {
+  color: #4422B1;
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .contacto-banner p {
+    font-size: 4rem;
+    width: 70%;
+  }
+}
+.contacto-banner h4 {
+  color: #000552;
+  text-align: left;
+  font-size: 2.4rem;
+}
+.contacto-banner h3 {
+  font-size: 6rem;
+  margin: 0;
+  text-align: left;
+}
+
+.contacto-location {
+  margin-top: 5rem;
+}
+.contacto-location .background-4 {
+  height: 100%;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .contacto-location .background-4 {
+    height: 80.7rem;
+    padding: 6rem;
+  }
+}
+.contacto-location .background-4 h3 {
+  color: #4422B1;
+}
+.contacto-location .background-4 p {
+  text-align: left;
+  font-size: 2.4rem;
+  color: #000552;
+}
+.contacto-location .background-4 label {
+  color: #000552;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 1.8rem;
+}
+@media (min-width: 768px) {
+  .contacto-location .background-4 label {
+    font-size: 1.8rem;
+  }
+}
+.contacto-location .background-4 input,
+.contacto-location .background-4 select {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #D6D7D9;
+  padding: 1.8rem 0.5rem;
+}
+@media (min-width: 768px) {
+  .contacto-location .background-4 input,
+.contacto-location .background-4 select {
+    font-size: 2rem;
+  }
+}
+.contacto-location .background-4 input::-webkit-input-placeholder {
+  color: #313C42;
+}
+.contacto-location .background-4 select::-webkit-input-placeholder {
+  color: #313C42;
+}
+.contacto-location .background-4 .boton {
+  text-align: center;
+  background-color: #4422B1;
+  color: #ffffff;
+  border: 1px solid #4422B1;
+}
+.contacto-location .background-4 .boton:hover {
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color: #4422B1;
+}
+.contacto-location .background-4 .cbox {
+  margin-top: 1.8rem;
+}
+
+.tramites {
+  margin: 5rem auto;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .tramites {
+    margin-top: 13.7rem;
+    margin-bottom: 13.7rem;
+  }
+}
+.tramites img {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .tramites img {
+    margin-top: 9rem;
+  }
+}
+.tramites p {
+  color: #4422B1;
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .tramites p {
+    font-size: 4rem;
+  }
 }

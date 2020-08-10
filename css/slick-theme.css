@@ -178,6 +178,42 @@
     font-size: 80px;
     line-height: 20px;
     position: absolute;
+    top: -5rem;
+    left: -70rem;
+    width: 2rem;
+    height: 2rem;
+    content: '•';
+    text-align: center;
+    color: #ffffff;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FD4D44;
+}
+
+.slick-3 .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 80px;
+    line-height: 20px;
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    content: '•';
+    text-align: center;
+    color: #552BB1;
+}
+
+.slick-3 .slick-dots li.slick-active button:before {
+    color: #FD4D44;
+}
+
+.slick-2 .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 80px;
+    line-height: 20px;
+    position: absolute;
     top: 0;
     left: 0;
     width: 2rem;
@@ -187,6 +223,24 @@
     color: #ffffff;
 }
 
-.slick-dots li.slick-active button:before {
+.slick-2 .slick-dots li.slick-active button:before {
+    color: #474646;
+}
+
+.multiple-items-3 .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 80px;
+    line-height: 20px;
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    content: '•';
+    text-align: center;
+    color: #552BB1;
+}
+
+.multiple-items-3 .slick-dots li.slick-active button:before {
     color: #FD4D44;
 }

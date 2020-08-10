@@ -27,6 +27,7 @@
           color: #ffffff;
           font-size: 1.8rem;
           font-weight: 700;
+          text-align: start;
       }
       input {
           padding: 2rem 1rem;
@@ -139,5 +140,5 @@
   
   .cbox {
       height: 3rem;
-      width: 3rem;
+      width: 3rem !important;
   }

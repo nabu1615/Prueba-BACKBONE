@@ -18,7 +18,7 @@
  
  .location {
      @media (min-width: $media-768) {
-         margin-top: 20rem;
+         margin-top: 10rem;
      }
      text-align: center;
      .row {
@@ -33,13 +33,13 @@
  
  .background-1 {
      position: relative;
-     justify-content: center;
      background-image: url(../img/hero-3.jpg);
      background-size: cover;
      background-position: center center;
      height: 35rem;
      @media (min-width: $media-768) {
          height: 80.7rem;
+         justify-content: center;
      }
      a {
          text-decoration: none;
@@ -62,9 +62,19 @@
          left: 4.8rem;
          font-size: 1.4rem;
          font-weight: 500;
+         display: none;
+         @media (min-width: $media-768) {
+             display: block;
+         }
      }
      h2 {
-         padding: 29.9rem 25.4rem 0 25.4rem;
+         margin-top: 5rem;
+         @media (min-width: $media-768) {
+             margin: 0 auto;
+             margin-top: 30rem;
+             height: 21rem;
+             width: 45rem;
+         }
      }
      div {
          padding-top: 4rem;
@@ -114,7 +124,7 @@
  
  .background-3 {
      background-color: $color-sec;
-     height: 45rem;
+     height: 100%;
      @media (min-width: $media-768) {
          height: 80.7rem;
          padding: 6rem;
@@ -123,17 +133,16 @@
      text-align: left;
      label {
          color: $color-fir;
-         font-size: 1.8rem;
+         font-size: 1.3rem;
          font-weight: 700;
+         @media (min-width: $media-768) {
+             font-size: 1.8rem;
+         }
      }
      p {
          color: $color-fir;
-         font-size: 2rem;
+         font-size: 2.4rem;
          font-weight: 700;
-         display: none;
-         @media (min-width: $media-768) {
-             display: block;
-         }
      }
      span {
          color: $color-fir;
@@ -189,8 +198,4 @@
      width: 100%;
      background-color: #ffffff;
      border: none;
- }
- 
- .cbox {
-     height: 3rem;
  }
