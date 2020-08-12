@@ -7,7 +7,7 @@
   }
   
   .footer {
-      margin: 5rem auto;
+      margin: 0 auto;
       min-height: 100%;
       text-align: center;
       @media (min-width: $media-768) {
@@ -55,12 +55,14 @@
   }
   
   .line {
+      text-align: center;
+      h1 {
+          text-align: center;
+      }
       @media (min-width: $media-768) {
           font-size: 2rem;
-          text-align: left;
           padding: 6rem 0;
       }
-      padding: 3rem 0;
       border-bottom: 1px solid #ffffff;
       &-2 {
           @media (min-width: $media-768) {
@@ -82,7 +84,9 @@
       color: $color-fir;
       text-transform: uppercase;
       font-weight: 700;
-      width: 100%;
+      @media (min-width: $media-768) {
+          width: 35rem;
+      }
       &:hover {
           cursor: pointer;
       }

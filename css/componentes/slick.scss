@@ -32,15 +32,16 @@
       width: 100%;
       &-1 {
           position: absolute;
-          top: 30%;
-          left: 30%;
+          top: 25%;
+          left: 0;
           height: 100%;
           width: 100%;
-          @media (min-width: $media-768) {
-              bottom: 5.2rem;
-              right: 9.8rem;
-              top: 50%;
-              left: 104.8rem;
+          text-align: center;
+          @media (min-width: $media-768) {}
+          h1 {
+              margin: 0 auto;
+              text-align: center;
+              width: 59%;
           }
           p {
               color: #ffffff;
@@ -60,8 +61,8 @@
               font-size: 2rem;
               text-transform: uppercase;
               font-weight: 700;
-              display: inline-block;
               width: 35.4rem;
+              display: inline-block;
               padding: 1rem 3rem;
               &:hover {
                   background-color: $color-fir;
@@ -107,6 +108,7 @@
   }
   
   .slickshow {
+      position: relative;
       .title {
           img {
               margin: 0;
@@ -168,10 +170,11 @@
   .slick-3 img {
       @media (min-width: $media-768) {
           width: 100%;
-          height: 72.2vh;
+          height: 72.2rem;
       }
       width: 100%;
-      height: 30vh;
+      height: 100%;
+      -webkit-filter: brightness(0.7);
       .slick-dots li button:before {
           font-family: 'slick';
           font-size: 40px;
@@ -187,5 +190,35 @@
       }
       .slick-dots li.slick-active button:before {
           color: $color-fou !important;
+      }
+  }
+  
+  .title-1 {
+      img {
+          margin: 0 auto;
+          @media (min-width: $media-768) {
+              width: 9.4rem;
+              height: 6.4rem;
+          }
+          width: 5rem;
+          height: 3rem;
+      }
+  }
+  
+  .scroll {
+      position: absolute;
+      left: 50%;
+      top: auto;
+      bottom: 5rem;
+      width: 9.4rem;
+      height: 6.4rem;
+      img {
+          margin: 0 auto;
+          @media (min-width: $media-768) {
+              width: 9.4rem;
+              height: 6.4rem;
+          }
+          width: 5rem;
+          height: 3rem;
       }
   }

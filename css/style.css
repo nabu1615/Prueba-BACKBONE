@@ -384,7 +384,7 @@ header {
 
 .contacto {
   right: 0;
-  top: 50%;
+  top: 25%;
   position: fixed;
   z-index: 1000000;
 }
@@ -532,6 +532,10 @@ header {
 .navigation ul li:last-of-type {
   background-color: #FEBE42;
 }
+.navigation ul li:last-of-type:hover {
+  background-color: #4422B1;
+  color: #ffffff;
+}
 
 .navigation a:hover {
   color: #FD4D44;
@@ -539,17 +543,20 @@ header {
 }
 
 .contact a:hover {
-  color: #000a9f;
+  color: white;
 }
 
 .separe {
   background-color: #FD4D44;
 }
+.separe:hover {
+  background-color: #4422B1;
+}
 .separe a {
   color: #ffffff;
 }
 .separe a:hover {
-  color: #000552;
+  color: #ffffff;
 }
 
 .container {
@@ -673,18 +680,16 @@ body {
 }
 .title-1 {
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 25%;
+  left: 0;
   height: 100%;
   width: 100%;
+  text-align: center;
 }
-@media (min-width: 768px) {
-  .title-1 {
-    bottom: 5.2rem;
-    right: 9.8rem;
-    top: 50%;
-    left: 104.8rem;
-  }
+.title-1 h1 {
+  margin: 0 auto;
+  text-align: center;
+  width: 59%;
 }
 .title-1 p {
   color: #ffffff;
@@ -706,8 +711,8 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
-  display: inline-block;
   width: 35.4rem;
+  display: inline-block;
   padding: 1rem 3rem;
 }
 .title-1 a:hover {
@@ -756,6 +761,9 @@ body {
   position: relative;
 }
 
+.slickshow {
+  position: relative;
+}
 .slickshow .title img {
   margin: 0;
   width: 5rem;
@@ -823,12 +831,13 @@ body {
 
 .slick-3 img {
   width: 100%;
-  height: 30vh;
+  height: 100%;
+  -webkit-filter: brightness(0.7);
 }
 @media (min-width: 768px) {
   .slick-3 img {
     width: 100%;
-    height: 72.2vh;
+    height: 72.2rem;
   }
 }
 .slick-3 img .slick-dots li button:before {
@@ -846,6 +855,38 @@ body {
 }
 .slick-3 img .slick-dots li.slick-active button:before {
   color: #4422B1 !important;
+}
+
+.title-1 img {
+  margin: 0 auto;
+  width: 5rem;
+  height: 3rem;
+}
+@media (min-width: 768px) {
+  .title-1 img {
+    width: 9.4rem;
+    height: 6.4rem;
+  }
+}
+
+.scroll {
+  position: absolute;
+  left: 50%;
+  top: auto;
+  bottom: 5rem;
+  width: 9.4rem;
+  height: 6.4rem;
+}
+.scroll img {
+  margin: 0 auto;
+  width: 5rem;
+  height: 3rem;
+}
+@media (min-width: 768px) {
+  .scroll img {
+    width: 9.4rem;
+    height: 6.4rem;
+  }
 }
 
 /*video*/
@@ -1048,7 +1089,8 @@ body {
   }
 }
 .download a {
-  width: 50%;
+  width: 40rem;
+  margin-top: 15rem;
   text-decoration: none;
   background-color: #ffffff;
   color: #000552;
@@ -1113,12 +1155,52 @@ body {
   }
 }
 
-#map {
-  height: 100%;
-}
-
 .logo-map {
   border: 2px solid #000552;
+}
+
+.ubicacion-main span {
+  text-align: left;
+  color: #ffffff;
+  position: absolute;
+  top: auto;
+  bottom: 3rem;
+  left: 14.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: none;
+  width: 72.5rem;
+}
+@media (min-width: 768px) {
+  .ubicacion-main span {
+    display: block;
+  }
+}
+.ubicacion-main img {
+  width: 100%;
+  height: 55vh;
+}
+@media (min-width: 768px) {
+  .ubicacion-main img {
+    width: 100%;
+    height: 70vh;
+  }
+}
+
+.ubicacion {
+  margin: 5rem 0;
+}
+.ubicacion-banner {
+  margin-top: 10rem;
+  height: 25rem;
+}
+.ubicacion-banner h3 {
+  text-align: left;
+  color: #000552;
+}
+.ubicacion-banner p {
+  color: #000552;
+  font-size: 2.6rem;
 }
 
 .location {
@@ -1126,7 +1208,7 @@ body {
 }
 @media (min-width: 768px) {
   .location {
-    margin-top: 10rem;
+    margin-top: 15rem;
   }
 }
 .location .row {
@@ -1557,7 +1639,7 @@ footer {
 }
 
 .footer {
-  margin: 5rem auto;
+  margin: 0 auto;
   min-height: 100%;
   text-align: center;
 }
@@ -1609,13 +1691,15 @@ footer {
 }
 
 .line {
-  padding: 3rem 0;
+  text-align: center;
   border-bottom: 1px solid #ffffff;
+}
+.line h1 {
+  text-align: center;
 }
 @media (min-width: 768px) {
   .line {
     font-size: 2rem;
-    text-align: left;
     padding: 6rem 0;
   }
 }
@@ -1640,11 +1724,15 @@ footer {
   color: #000552;
   text-transform: uppercase;
   font-weight: 700;
-  width: 100%;
   text-decoration: none;
   font-size: 18px;
   display: inline-block;
   border: none;
+}
+@media (min-width: 768px) {
+  .boton-2 {
+    width: 35rem;
+  }
 }
 .boton-2:hover {
   cursor: pointer;
@@ -1710,9 +1798,9 @@ footer {
 }
 @media (min-width: 768px) {
   .contacto-banner {
-    margin-top: 14.1rem;
-    height: 41.5rem;
-    padding-top: 18rem;
+    height: 58.5rem;
+    padding-top: 35rem;
+    margin-bottom: 10rem;
   }
 }
 .contacto-banner p {
@@ -1736,8 +1824,74 @@ footer {
   text-align: left;
 }
 
-.contacto-location {
-  margin-top: 5rem;
+.building {
+  background-color: #4422B1;
+  padding: 7rem;
+}
+@media (min-width: 768px) {
+  .building {
+    padding: 10rem;
+  }
+}
+.building p {
+  color: #ffffff;
+}
+.building span {
+  color: #ffffff;
+}
+
+.phone {
+  background-color: #ffffff;
+  padding: 7rem;
+}
+@media (min-width: 768px) {
+  .phone {
+    padding: 10rem 19rem;
+  }
+}
+.phone p {
+  color: #4422B1;
+}
+.phone span {
+  color: #4422B1;
+}
+
+.building,
+.phone {
+  display: inline-block;
+  height: 41.4rem;
+  align-items: center;
+  text-align: left;
+}
+.building img,
+.phone img {
+  margin-right: 5.7rem;
+}
+.building p,
+.phone p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.building span,
+.phone span {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .building span,
+.phone span {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .building,
+.phone {
+    display: flex;
+  }
+}
+
+.contacto-location .row {
+  height: 100%;
 }
 .contacto-location .background-4 {
   height: 100%;
@@ -1803,30 +1957,16 @@ footer {
   margin-top: 1.8rem;
 }
 
-.tramites {
-  margin: 5rem auto;
-  text-align: center;
+.proyecto {
+  margin: 0 auto;
 }
-@media (min-width: 768px) {
-  .tramites {
-    margin-top: 13.7rem;
-    margin-bottom: 13.7rem;
-  }
-}
-.tramites img {
-  max-width: 100%;
-}
-@media (min-width: 768px) {
-  .tramites img {
-    margin-top: 9rem;
-  }
-}
-.tramites p {
-  color: #4422B1;
-  font-size: 2.4rem;
-}
-@media (min-width: 768px) {
-  .tramites p {
-    font-size: 4rem;
-  }
+.proyecto-bg {
+  margin: 0 auto;
+  margin-top: 18rem;
+  display: block;
+  background-image: url(/img/location.png);
+  height: 59.3vh;
+  max-width: 164rem;
+  background-size: cover;
+  background-position: center center;
 }

@@ -1,0 +1,11 @@
+.proyecto {
+  margin: 35rem auto;
+}
+.proyecto-bg {
+  display: block;
+  background-image: url(/img/location.png);
+  height: 59.3vh;
+  max-width: 164rem;
+  background-size: cover;
+  background-position: center center;
+}

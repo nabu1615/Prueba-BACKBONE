@@ -31,7 +31,7 @@ header {
 
 .contacto {
     right: 0;
-    top: 50%;
+    top: 25%;
     position: fixed;
     z-index: 1000000;
     .whatsapp {
@@ -160,6 +160,10 @@ header {
 
 .navigation ul li:last-of-type {
     background-color: $color-sec;
+    &:hover {
+        background-color: $color-fou;
+        color: #ffffff;
+    }
 }
 
 .navigation a:hover {
@@ -168,16 +172,19 @@ header {
 }
 
 .contact a:hover {
-    color: lighten($color-fir, 15%);
+    color: lighten(#ffffff, 15%);
 }
 
 .separe {
     background-color: $color-tri;
+    &:hover {
+        background-color: $color-fou;
+    }
     a {
         color: #ffffff;
     }
     a:hover {
-        color: $color-fir;
+        color: #ffffff;
     }
 }
 
