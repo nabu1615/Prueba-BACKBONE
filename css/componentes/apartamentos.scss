@@ -1,0 +1,41 @@
+area[full]::after {
+    content: attr(full);
+    position: relative;
+    display: inline-block;
+    color: #FF6B00;
+    font-size: 25px;
+    padding: 0 20px 20px;
+}
+
+area[full].multiArea::after {
+    color: blue;
+}
+
+area[full]:hover::after {
+    color: blue;
+    -webkit-animation: rebota .9s alternate infinite ease-in;
+    animation: rebota .9s alternate infinite ease-in;
+    font-weight: 900;
+}
+
+area[full].multiArea:hover::after {
+    color: red;
+    -webkit-animation: none;
+    animation: none;
+}
+
+.mapApartamentos {
+    margin-top: 18rem;
+}
+
+.piso {
+    margin-top: 18rem;
+    img {
+        width: 100%;
+        color: #707070;
+    }
+}
+
+.planos {
+    padding: 6.4rem 19.3rem 6.4rem 9rem;
+}

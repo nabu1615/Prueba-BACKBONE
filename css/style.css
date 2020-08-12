@@ -1871,6 +1871,12 @@ footer {
   }
 }
 
+.contacto-location {
+  background-color: #ffffff;
+}
+.contacto-location .video {
+  width: 100%;
+}
 .contacto-location .row {
   height: 100%;
 }
@@ -2165,4 +2171,44 @@ footer {
     width: 100%;
     height: 70vh;
   }
+}
+
+area[full]::after {
+  content: attr(full);
+  position: relative;
+  display: inline-block;
+  color: #FF6B00;
+  font-size: 25px;
+  padding: 0 20px 20px;
+}
+
+area[full].multiArea::after {
+  color: blue;
+}
+
+area[full]:hover::after {
+  color: blue;
+  animation: rebota 0.9s alternate infinite ease-in;
+  font-weight: 900;
+}
+
+area[full].multiArea:hover::after {
+  color: red;
+  animation: none;
+}
+
+.mapApartamentos {
+  margin-top: 18rem;
+}
+
+.piso {
+  margin-top: 18rem;
+}
+.piso img {
+  width: 100%;
+  color: #707070;
+}
+
+.planos {
+  padding: 6.4rem 19.3rem 6.4rem 9rem;
 }
