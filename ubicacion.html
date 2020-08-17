@@ -15,59 +15,72 @@
 </head>
 
 <body>
+
     <header>
-        <div class="contacto">
-            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="whatsapp-2"><i class="fab fa-whatsapp"></i></a>
+        <div class="row primary">
+            <div class="col 3 first"></div>
+            <div class="col 3 second"></div>
+            <div class="col 3 third"></div>
+            <div class="col 3 fourth"></div>
         </div>
-        <img src="img/log.JPG" alt="logo" class="logo-sm">
-        <div class="info">
-            <div>
-                <div class="row">
-                    <div class="col-12 col-md-5">
-                        <p class="dir">Sala de ventas Cra 4 # 26a 50 - Cali, Colombia</p>
-                    </div>
-                    <div class="col-12 col-md-5 offset-md-2">
-                        <p class="tel">Teléfonos (57-1) 3213708734 (57-1) 3213708734</p>
-                    </div>
-                    <div class="col-12">
-                        <a href="#"><i class="fab fa-whatsapp-square"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Informacion de contacto-->
         <div class="row menu">
             <div class="col-12">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
+        <div class="row closeMenu">
+            <div class="col-12">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <img src="img/log.JPG" alt="logo" class="logo-sm">
         <!--Menu mobile-->
+        <div class="contacto">
+            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="whatsapp-2"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="info">
+            <div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p class="dir">Sala de ventas Cra 4 # 26a 50 - Cali, Colombia</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p class="tel">Teléfonos (57-1) 3213708734 (57-1) 3213708734</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Informacion de contacto-->
         <nav class="navigation">
             <img src="img/log.JPG" alt="logo" class="logo-lg">
             <ul class="row">
-                <li class="col-12 col-md">
+                <li class="col-12 col-md no-padding">
                     <a href="index.html">Inicio</a>
                 </li>
-                <li class="col-12 col-md">
-                    <a href="apartamentos.html">Apartamentos</a>
+                <li class="col-12 col-md no-padding modulo">
+                    <a href="apartamentos.html" class="menuApto">Apartamentos</a>
+                    <ul class="desplegable">
+                        <li><a href="#">Etapa 1</a></li>
+                        <li><a href="#">Etapa 2</a></li>
+                    </ul>
                 </li>
-                <li class="col-12 col-md">
+                <li class="col-12 col-md no-padding">
                     <a href="proyecto.html">El Proyecto</a>
                 </li>
-                <li class="col-12 col-md">
+                <li class="col-12 col-md no-padding">
                     <a href="#">Zonan comunes</a>
                 </li>
-                <li class="col-12 col-md offset-md-2">
+                <li class="col-12 col-md offset-md-2 offset-lg-2 no-padding">
                     <a href="ubicacion.html">Ubicación</a>
                 </li>
-                <li class="col-12 col-md">
+                <li class="col-12 col-md no-padding">
                     <a href="#">Nosotros</a>
                 </li>
-                <li class="col-12 col-md separe">
+                <li class="col-12 col-md separe no-padding">
                     <a href="#">Separe en línea</a>
                 </li>
-                <li class="col-12 col-md contact">
+                <li class="col-12 col-md contact no-padding">
                     <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
@@ -83,7 +96,7 @@
                         <img src="img/ubicacion.png" alt="hero 1">
                         <div class="title">
                             <div class="container">
-                                <div class="row justify-content-md-left">
+                                <div class="row">
                                     <div class="col-12">
                                         <img src="img/birds-1.svg" alt="birds">
                                     </div>
@@ -95,7 +108,7 @@
                                     <div class="col-12 col-md-3 mb-3">
                                         <a href="#">Ver Apartamentos</a>
                                     </div>
-                                    <div class="col-12 col-md-3">
+                                    <div class="col-12 col-md-3 offset-md-1">
                                         <a href="#">Reserva Ya!</a>
                                     </div>
                                 </div>
@@ -121,7 +134,7 @@
                 <div class="mapa no-padding col-12" id="wheremap"></div>
             </div>
         </section>
-        <section class="social-2 ubicacion">
+        <section class="social-2">
             <div class="row">
                 <div class="col-12">
                     <div class="social-zone multiple-items-3">
@@ -211,15 +224,15 @@
         </section>
         <section class="redesMio">
             <div class="row">
-                <div class="col-md-6 col-12 no-padding">
+                <div class="col-xl-6 col-12 no-padding">
                     <img src="img/RedesMio.png" alt="RedesMio">
                 </div>
-                <div class="col-md-6 col-12 background no-padding">
+                <div class="col-xl-6 col-12 background no-padding">
                     <div class="row">
                         <div class="col-12">
                             <h3>Redes MIO</h3>
                         </div>
-                        <div class="col-7 offset-5">
+                        <div class="col-lg-9 offset-lg-3 col-md-10 offset-md-2 col-12">
                             <p>Vivamus vel commodo metus, vitae auctor tellus. Phasellus vel ante vitae quam sagittis ornare et vel odio. Nullam id rhoncus turpis. Sed leo orci, tincidunt et felis sed, ultrices hendrerit nisl. Cras egestas varius magna et
                                 pulvinar. Praesent egestas velit et volutpat porttitor. Etiam faucibus dolor purus, accumsan maximus lorem mollis eu.</p>
                         </div>
@@ -247,6 +260,14 @@
         <!--Articuos y enlaces a publicaciones en redes-->
     </main>
     <footer>
+        <div class="row footer-sm container">
+            <div class="col-12">
+                <img src="img/logo-3.png" alt="Logo">
+            </div>
+            <div class="col-12">
+                <p>Un proyecto de canales desarrolladores</p>
+            </div>
+        </div>
         <div class="footer container">
             <div class="row line">
                 <div class="col-1 offset-3">
@@ -331,7 +352,8 @@
             <div class="col 3 fourth"></div>
         </div>
     </footer>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg2KK10NPvfwuIZ_p7xo5VtfMTYvUeVpw&amp;libraries=places"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXo3psTM4Cx4jbylzNbMgCD1_4qHhx58c"></script>
     <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -340,6 +362,7 @@
     <script src="js/map.js"></script>
     <script src="https://kit.fontawesome.com/1f330f959c.js" crossorigin="anonymous"></script>
     <script src="js/main.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164114957-1"></script>
 </body>
 
 </html>

@@ -7,11 +7,33 @@
   }
   
   .footer {
+      &-sm {
+          @media (min-width: $media-960) {
+              display: none;
+          }
+          margin: 0 auto;
+          min-height: 100%;
+          text-align: center;
+          p {
+              font-size: 2.4rem;
+              text-align: center;
+              color: #ffffff;
+              font-weight: 700;
+              @media (min-width: $media-960) {
+                  font-size: 2.4rem;
+                  text-align: left;
+              }
+          }
+      }
+      display: none;
       margin: 0 auto;
       min-height: 100%;
       text-align: center;
       @media (min-width: $media-768) {
           text-align: left;
+      }
+      @media (min-width: $media-960) {
+          display: block;
       }
       p {
           font-size: 2.4rem;
@@ -143,6 +165,10 @@
   }
   
   .cbox {
-      height: 3rem;
-      width: 3rem !important;
+      height: 1.5rem;
+      width: 1.5rem !important;
+      @media (min-width: $media-960) {
+          height: 3rem;
+          width: 3rem !important;
+      }
   }

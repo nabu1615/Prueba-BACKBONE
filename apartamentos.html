@@ -17,79 +17,131 @@
 <body>
 
     <header>
-        <div class="contacto">
-            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="whatsapp-2"><i class="fab fa-whatsapp"></i></a>
+        <div class="row primary">
+            <div class="col 3 first"></div>
+            <div class="col 3 second"></div>
+            <div class="col 3 third"></div>
+            <div class="col 3 fourth"></div>
         </div>
-        <img src="img/log.JPG" alt="logo" class="logo-sm">
-        <div class="info">
-            <div>
-                <div class="row">
-                    <div class="col-12 col-md-5">
-                        <p class="dir">Sala de ventas Cra 4 # 26a 50 - Cali, Colombia</p>
-                    </div>
-                    <div class="col-12 col-md-5 offset-md-2">
-                        <p class="tel">Teléfonos (57-1) 3213708734 (57-1) 3213708734</p>
-                    </div>
-                    <div class="col-12">
-                        <a href="#"><i class="fab fa-whatsapp-square"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Informacion de contacto-->
         <div class="row menu">
             <div class="col-12">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
+        <div class="row closeMenu">
+            <div class="col-12">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <img src="img/log.JPG" alt="logo" class="logo-sm">
         <!--Menu mobile-->
-
+        <div class="contacto">
+            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="whatsapp-2"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="info">
+            <div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p class="dir">Sala de ventas Cra 4 # 26a 50 - Cali, Colombia</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p class="tel">Teléfonos (57-1) 3213708734 (57-1) 3213708734</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Informacion de contacto-->
         <nav class="navigation">
             <img src="img/log.JPG" alt="logo" class="logo-lg">
             <ul class="row">
-                <li class="col-12 col-md">
+                <li class="col-12 col-md no-padding">
                     <a href="index.html">Inicio</a>
                 </li>
-                <li class="col-12 col-md">
-                    <a href="#">Apartamentos</a>
+                <li class="col-12 col-md no-padding modulo">
+                    <a href="apartamentos.html" class="menuApto">Apartamentos</a>
+                    <ul class="desplegable">
+                        <li><a href="#">Etapa 1</a></li>
+                        <li><a href="#">Etapa 2</a></li>
+                    </ul>
                 </li>
-                <li class="col-12 col-md">
+                <li class="col-12 col-md no-padding">
                     <a href="proyecto.html">El Proyecto</a>
                 </li>
-                <li class="col-12 col-md">
+                <li class="col-12 col-md no-padding">
                     <a href="#">Zonan comunes</a>
                 </li>
-                <li class="col-12 col-md offset-md-2">
+                <li class="col-12 col-md offset-md-2 offset-lg-2 no-padding">
                     <a href="ubicacion.html">Ubicación</a>
                 </li>
-                <li class="col-12 col-md">
+                <li class="col-12 col-md no-padding">
                     <a href="#">Nosotros</a>
                 </li>
-                <li class="col-12 col-md separe">
+                <li class="col-12 col-md separe no-padding">
                     <a href="#">Separe en línea</a>
                 </li>
-                <li class="col-12 col-md contact">
+                <li class="col-12 col-md contact no-padding">
                     <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
         <!--Navegacion-->
-
     </header>
     <main>
         <section class="piso">
             <div class="row">
-                <div class="col-12 col-md-6"></div>
-                <div class="col-12 col-md-6">
-                    <div class="planos">
-                        <img src="/img/Enmascarar grupo 2.png" usemap="#image-map" class="planoPiso1">
-                        <map name="image-map">
-                        <area alt="01" title="01" href="#" full="01" coords="388,8,389,94,437,93,441,118,518,118,518,8" shape="poly">
-                    </map>
+                <div class="col-12 col-md-6 ConsultaApt">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>CONSULTA LOS APARTAMENTOS</h3>
+                        </div>
+                        <div class="col-8 mt-5">
+                            <label for="SelEtapa">Selecciona la etapa:</label>
+                        </div>
+                        <div class="col-4 mt-5">
+                            <select name="SelEtapa" id="etapa">
+                                <option value="Etapa 1">1</option>
+                                <option value="Etapa 2">2</option>
+                            </select>
+                        </div>
+                        <div class="col-8 mt-5">
+                            <label for="Selpiso">Selecciona el piso:</label>
+                        </div>
+                        <div class="col-4 mt-5">
+                            <select name="Selpiso" id="piso">
+                                <option value="piso 1">Piso 1</option>
+                                <option value="piso 2">Piso 2</option>
+                            </select>
+                        </div>
+                        <div class="col-8 mt-5">
+                            <label for="selApto">Selecciona apartamento:</label>
+                        </div>
+                        <div class="col-4 mt-5">
+                            <select name="selApto" id="apto">
+                                <option value="Apto01">01</option>
+                                <option value="Apto02">02</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+
+                        <div class="planos">
+                            <img src="/img/Grupo 2032.png" usemap="#image-map" class="planoPiso1">
+                            <map name="image-map">
+                                    <area alt="01" title="01" href="#" full="" coords="388,8,389,94,437,93,441,118,518,118,518,8" shape="poly">
+                                </map>
+                            <h3>Piso 1</h3>
+                            <p>Etapa 1</p>
+                        </div>
+                        <div class="AptosDispo">
+                            <span class="dispoText"><img src="/img/NoDisponible.svg" alt="No disponible" class="disponibilidad">Vendido</span>
+
+                            <span class="dispoText"><img src="/img/disponible.svg" alt="disponible" class="disponibilidad">Disponible</span>
+                        </div>
+                    </div>
+                </div>
         </section>
         <section class="contacto-location">
             <div class="row align-items-center">
@@ -183,6 +235,14 @@
         <!--Articuos y enlaces a publicaciones en redes-->
     </main>
     <footer>
+        <div class="row footer-sm container">
+            <div class="col-12">
+                <img src="img/logo-3.png" alt="Logo">
+            </div>
+            <div class="col-12">
+                <p>Un proyecto de canales desarrolladores</p>
+            </div>
+        </div>
         <div class="footer container">
             <div class="row line">
                 <div class="col-1 offset-3">
@@ -268,10 +328,7 @@
         </div>
     </footer>
 
-
-
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg2KK10NPvfwuIZ_p7xo5VtfMTYvUeVpw&amp;libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXo3psTM4Cx4jbylzNbMgCD1_4qHhx58c"></script>
     <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -41,8 +41,9 @@
   }
   
   .content-with {
-      @media (min-width: $media-768) {
-          width: 50%;
+      width: 100%;
+      @media (min-width: $media-1600) {
+          width: 70%;
       }
   }
   

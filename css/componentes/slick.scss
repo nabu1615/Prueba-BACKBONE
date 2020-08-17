@@ -6,12 +6,23 @@
           top: auto;
           bottom: 3rem;
           left: 14.5rem;
+          left: 5rem;
           font-size: 1.4rem;
           font-weight: 500;
           display: none;
           width: 72.5rem;
-          @media (min-width: $media-768) {
+          @media (min-width: $media-960) {
               display: block;
+              width: 50rem;
+              top: auto;
+              bottom: 3rem;
+          }
+          @media (min-width: $media-1600) {
+              display: block;
+              width: 72.5rem;
+              top: auto;
+              bottom: 3rem;
+              left: 14.5rem;
           }
       }
       img {
@@ -26,22 +37,34 @@
   
   .title {
       position: absolute;
-      top: 25%;
+      top: 20%;
       left: 0;
       height: 50%;
       width: 100%;
+      @media (min-width: $media-768) {
+          top: 25%;
+      }
       &-1 {
           position: absolute;
-          top: 25%;
+          @media (min-width: $media-768) {
+              top: 15%;
+          }
+          @media (min-width: $media-960) {
+              top: 25%;
+          }
+          top: 5%;
           left: 0;
           height: 100%;
           width: 100%;
           text-align: center;
-          @media (min-width: $media-768) {}
           h1 {
               margin: 0 auto;
               text-align: center;
-              width: 59%;
+              @media (min-width: $media-960) {
+                  width: 59%;
+              }
+              width: 70%;
+              font-size: 2rem;
           }
           p {
               color: #ffffff;
@@ -61,7 +84,7 @@
               font-size: 2rem;
               text-transform: uppercase;
               font-weight: 700;
-              width: 35.4rem;
+              width: 30rem;
               display: inline-block;
               padding: 1rem 3rem;
               &:hover {
@@ -82,6 +105,11 @@
           margin-bottom: 3rem;
           @media (min-width: $media-768) {
               display: block;
+              font-size: 1.5rem;
+          }
+          @media (min-width: $media-1280) {
+              display: block;
+              font-size: 2rem;
           }
       }
       a {
@@ -97,8 +125,27 @@
               color: #ffffff;
               transition: background-color 0.3s ease;
           }
-          @media (min-width: $media-768) {
+          @media (min-width: $media-1600) {
               padding: 2rem 4.5rem;
+          }
+          @media (min-width: $media-1280) {
+              padding: 1.5rem 3rem;
+          }
+          @media (min-width: $media-960) {
+              padding: 1rem 2.5rem;
+          }
+          @media (min-width: $media-960) {
+              font-size: 1.3rem;
+              margin-right: 2rem;
+          }
+      }
+      h1 {
+          font-size: 2rem;
+          @media (min-width: $media-768) {
+              font-size: 4rem;
+          }
+          @media (min-width: $media-960) {
+              font-size: 6rem;
           }
       }
   }
@@ -108,8 +155,24 @@
   }
   
   .slickshow {
-      position: relative;
+      @media (min-width: $media-768) {
+          position: relative;
+      }
       .title {
+          h1 {
+              @media (min-width: $media-768) {
+                  font-size: 3.5rem;
+              }
+              @media (min-width: $media-960) {
+                  font-size: 4rem;
+              }
+              @media (min-width: $media-1280) {
+                  font-size: 4.5rem;
+              }
+              @media (min-width: $media-1600) {
+                  font-size: 6rem;
+              }
+          }
           img {
               margin: 0;
               @media (min-width: $media-768) {
@@ -123,11 +186,11 @@
               text-decoration: none;
               background-color: $color-fir;
               color: #ffffff;
-              font-size: 1.8rem;
+              font-size: 1.2rem;
               text-transform: uppercase;
               font-weight: 700;
               display: inline-block;
-              width: 35rem;
+              width: 20rem;
               text-align: center;
               &:hover {
                   background-color: #ffffff;
@@ -135,10 +198,14 @@
                   transition: background-color 0.3s ease;
               }
               border: none;
-              padding: 1.5rem 4.5rem;
+              padding: 1.5rem;
               @media (min-width: $media-768) {
                   padding: 2.2rem;
                   margin-right: 1.9rem;
+              }
+              @media (min-width: $media-960) {
+                  width: 35rem;
+                  font-size: 1.8rem;
               }
           }
       }
@@ -152,6 +219,12 @@
       right: 0;
       top: 50%;
       font-size: 3rem;
+      button {
+          display: none;
+          @media (min-width: $media-768) {
+              display: block;
+          }
+      }
       @media (min-width: $media-768) {
           display: block;
           position: absolute;
@@ -168,7 +241,14 @@
   }
   
   .slick-3 {
+      .birds {
+          display: none;
+          @media (min-width: $media-768) {
+              display: block;
+          }
+      }
       .hero {
+          height: 100%;
           span {
               text-align: left;
               color: #ffffff;
@@ -177,10 +257,27 @@
               left: 4.8rem;
               font-size: 1.4rem;
               font-weight: 500;
+              display: none;
+              @media (min-width: $media-960) {
+                  display: block;
+              }
+          }
+      }
+      h1 {
+          padding: 1rem 0;
+          @media (min-width: $media-768) {
+              font-size: 3rem;
+              padding: 1rem 0;
+          }
+          @media (min-width: $media-960) {
+              font-size: 5rem;
+          }
+          @media (min-width: $media-1600) {
+              font-size: 6rem;
           }
       }
       img {
-          @media (min-width: $media-768) {
+          @media (min-width: $media-1600) {
               width: 100%;
               height: 72.2rem;
           }
@@ -207,6 +304,7 @@
   }
   
   .title-1 {
+      height: 100%;
       img {
           margin: 0 auto;
           @media (min-width: $media-768) {
@@ -225,6 +323,10 @@
       bottom: 5rem;
       width: 9.4rem;
       height: 6.4rem;
+      display: none;
+      @media (min-width: $media-768) {
+          display: block;
+      }
       img {
           margin: 0 auto;
           @media (min-width: $media-768) {

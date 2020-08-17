@@ -1,4 +1,5 @@
 .redesMio {
+    background-color: #fff;
     text-align: right;
     h3 {
         color: #ffffff;
@@ -9,17 +10,26 @@
         color: #ffffff;
         font-size: 2.4rem;
     }
-    height: 80.7rem;
+    @media (min-width: $media-1600) {
+        height: 80.7rem;
+    }
+    height: 100%;
     .row {
         height: 100%;
     }
     img {
-        max-width: 100%;
+        width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
     .background {
-        padding: 16rem 5.2rem;
+        padding: 4rem 2rem;
+        @media (min-width: $media-960) {
+            padding: 6rem 2.5rem;
+        }
+        @media (min-width: $media-1600) {
+            padding: 16rem 5.2rem;
+        }
         background: rgb(19, 129, 200);
         /* Old browsers */
         background: -moz-linear-gradient(-45deg, rgba(19, 129, 200, 1) 1%, rgba(20, 126, 200, 1) 18%, rgba(18, 128, 194, 1) 60%, rgba(19, 127, 161, 1) 100%);
@@ -31,28 +41,55 @@
     }
 }
 
-.ubicacion-main {
-    span {
-        text-align: left;
-        color: #ffffff;
-        position: absolute;
-        top: auto;
-        bottom: 3rem;
-        left: 14.5rem;
-        font-size: 1.4rem;
-        font-weight: 500;
-        display: none;
-        width: 72.5rem;
-        @media (min-width: $media-768) {
-            display: block;
+.ubicacion {
+    margin-bottom: 5rem;
+    &-banner {
+        margin-top: 10rem;
+        h3 {
+            text-align: left;
+            color: $color-fir;
         }
+        p {
+            @media (min-width: $media-768) {
+                font-size: 2.2rem;
+            }
+            @media (min-width: $media-960) {
+                font-size: 2.6rem;
+            }
+            color: $color-fir;
+            font-size: 1.6rem;
+        }
+        height: 25rem;
     }
-    img {
-        @media (min-width: $media-768) {
-            width: 100%;
-            height: 70vh;
+    &-main {
+        .title {
+            @media (min-width: $media-768) {
+                margin-top: 5rem;
+            }
         }
-        width: 100%;
-        height: 55vh;
+        span {
+            text-align: left;
+            color: #ffffff;
+            position: absolute;
+            top: auto;
+            bottom: 2rem;
+            left: 14.5rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+            display: none;
+            width: 72.5rem;
+            @media (min-width: $media-768) {
+                display: block;
+            }
+        }
+        img {
+            object-fit: cover;
+            @media (min-width: $media-768) {
+                width: 100%;
+                height: 78vh;
+            }
+            width: 100%;
+            height: 40vh;
+        }
     }
 }

@@ -24,18 +24,132 @@ area[full].multiArea:hover::after {
     animation: none;
 }
 
-.mapApartamentos {
-    margin-top: 18rem;
-}
-
+// .mapApartamentos {
+//     margin-top: 18rem;
+// }
 .piso {
-    margin-top: 18rem;
-    img {
-        width: 100%;
-        color: #707070;
+    @media (min-width: $media-768) {
+        margin-top: 18rem;
+    }
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    .ConsultaApt {
+        line-height: 5rem;
+        h3 {
+            text-align: left;
+            color: $color-fou;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        @media (min-width: $media-768) {
+            padding: 4rem 8rem 4rem 3rem;
+        }
+        @media (min-width: $media-1280) {
+            padding: 8rem 16rem 8rem 6rem;
+        }
+        @media (min-width: $media-1600) {
+            padding: 17rem 32rem 19rem 13rem;
+        }
+        padding: 2rem;
+    }
+    label {
+        color: $color-fir;
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
+    option {
+        i {
+            color: $color-fir;
+            font-size: 5rem;
+        }
+    }
+    select {
+        background-color: #F8F8F8;
+        appearance: none;
+        color: $color-fir;
+        font-size: 2rem;
+        font-weight: 700;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url(/img/arrowOptionDown.svg);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        block-size: 100%;
     }
 }
 
+.desplegable {
+    background-color: #fff;
+    display: none;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    a {
+        width: 100%;
+        background-color: #fff;
+        padding: 1rem;
+    }
+    @media (min-width: $media-768) {
+        position: absolute;
+    }
+}
+
+.menuApto {
+    display: flex;
+    @media (min-width: $media-768) {
+        position: relative;
+    }
+}
+
+.AptosDispo {
+    margin: 0 auto;
+}
+
 .planos {
-    padding: 6.4rem 19.3rem 6.4rem 9rem;
+    img {
+        width: 100%;
+        color: #707070;
+        position: relative;
+    }
+    justify-content: center;
+    text-align: center;
+    h3 {
+        color: $color-fou;
+        font-weight: 700;
+        font-size: 7rem;
+        position: absolute;
+        top: 6.4rem;
+        left: 0;
+    }
+    p {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $color-fou;
+        position: absolute;
+        top: 15rem;
+        left: 0;
+    }
+    .disponibilidad {
+        width: 2.4rem !important;
+        height: 2.4rem !important;
+    }
+    @media (min-width: $media-768) {
+        margin: 6.4rem 19.3rem 0 9rem;
+    }
+    margin: 2rem;
+}
+
+.dispoText {
+    text-align: center;
+    margin-left: 0.5rem;
+    color: $color-fir;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+span {
+    img {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
 }
