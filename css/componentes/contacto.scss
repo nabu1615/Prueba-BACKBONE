@@ -4,7 +4,7 @@
             padding-top: 25rem;
             margin-bottom: 10rem;
         }
-        @media (min-width: $media-960) {
+        @media (min-width: $media-1600) {
             height: 58.5rem;
             padding-top: 35rem;
             margin-bottom: 10rem;
@@ -52,46 +52,50 @@
         }
     }
     
-    .building,
-    .phone {
-        padding: 7rem;
-        margin: 0 auto;
-        text-align: center !important;
-        @media (min-width: $media-768) {
-            padding: 3rem;
-            height: 41.4rem;
-        }
-        @media (min-width: $media-1280) {
-            padding: 10rem;
-        }
-        display: inline-block;
-        height: 35rem;
-        align-items: center;
-        text-align: left;
-        img {
+    .contacto-location {
+        .building,
+        .phone {
+            padding: 7rem;
+            margin: 0 auto;
+            text-align: center !important;
             @media (min-width: $media-768) {
-                margin-right: 2.5rem;
+                padding: 3rem;
+                height: 41.4rem;
             }
             @media (min-width: $media-1280) {
-                margin-right: 5.7rem;
+                padding: 7rem;
             }
-        }
-        p {
-            font-size: 2rem;
-            font-weight: 700;
-        }
-        span {
-            font-size: 2.5rem;
+            display: inline-block;
+            height: 35rem;
+            align-items: center;
+            text-align: left;
+            img {
+                @media (min-width: $media-768) {
+                    margin-right: 2.5rem;
+                    width: 20%;
+                }
+                @media (min-width: $media-1600) {
+                    margin-right: 5.7rem;
+                    width: 30%;
+                }
+            }
+            p {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            span {
+                font-size: 2.5rem;
+                @media (min-width: $media-1600) {
+                    font-size: 3rem;
+                }
+                @media (min-width: 1920px) {
+                    font-size: 4rem;
+                }
+                font-weight: 700;
+            }
             @media (min-width: $media-768) {
-                font-size: 3rem;
+                display: flex;
             }
-            @media (min-width: $media-1280) {
-                font-size: 4rem;
-            }
-            font-weight: 700;
-        }
-        @media (min-width: $media-768) {
-            display: flex;
         }
     }
     

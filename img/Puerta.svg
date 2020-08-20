@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.19" height="76.904" viewBox="0 0 64.19 76.904">
+  <g id="Puerta" transform="translate(-1389.5 -466)">
+    <g id="Rectángulo_3171" data-name="Rectángulo 3171" transform="translate(1399 466)" fill="#fff" stroke="#552bb1" stroke-width="3">
+      <rect width="46" height="76" stroke="none"/>
+      <rect x="1.5" y="1.5" width="43" height="73" fill="none"/>
+    </g>
+    <line id="Línea_49" data-name="Línea 49" x2="64.19" transform="translate(1389.5 541.404)" fill="none" stroke="#552bb1" stroke-width="3"/>
+    <g id="Elipse_90" data-name="Elipse 90" transform="translate(1405 499)" fill="#fff" stroke="#552bb1" stroke-width="3">
+      <ellipse cx="3.5" cy="3" rx="3.5" ry="3" stroke="none"/>
+      <ellipse cx="3.5" cy="3" rx="2" ry="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>

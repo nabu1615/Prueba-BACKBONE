@@ -5,19 +5,18 @@
           position: absolute;
           top: auto;
           bottom: 3rem;
-          left: 14.5rem;
-          left: 5rem;
           font-size: 1.4rem;
           font-weight: 500;
           display: none;
           width: 72.5rem;
-          @media (min-width: $media-960) {
+          @media (min-width: $media-1600) {
               display: block;
-              width: 50rem;
+              width: 72.5rem;
               top: auto;
               bottom: 3rem;
+              left: 7rem;
           }
-          @media (min-width: $media-1600) {
+          @media (min-width: 1920px) {
               display: block;
               width: 72.5rem;
               top: auto;
@@ -37,7 +36,7 @@
   
   .title {
       position: absolute;
-      top: 20%;
+      top: 10%;
       left: 0;
       height: 50%;
       width: 100%;
@@ -49,7 +48,7 @@
           @media (min-width: $media-768) {
               top: 15%;
           }
-          @media (min-width: $media-960) {
+          @media (min-width: $media-1600) {
               top: 25%;
           }
           top: 5%;
@@ -166,12 +165,12 @@
               @media (min-width: $media-960) {
                   font-size: 4rem;
               }
-              @media (min-width: $media-1280) {
-                  font-size: 4.5rem;
-              }
-              @media (min-width: $media-1600) {
-                  font-size: 6rem;
-              }
+              //   @media (min-width: $media-1280) {
+              //       font-size: 4.5rem;
+              //   }
+              //   @media (min-width: $media-1600) {
+              //       font-size: 6rem;
+              //   }
           }
           img {
               margin: 0;
@@ -200,10 +199,12 @@
               border: none;
               padding: 1.5rem;
               @media (min-width: $media-768) {
-                  padding: 2.2rem;
                   margin-right: 1.9rem;
               }
               @media (min-width: $media-960) {
+                  width: 28rem;
+              }
+              @media (min-width: $media-1600) {
                   width: 35rem;
                   font-size: 1.8rem;
               }
@@ -320,9 +321,7 @@
       position: absolute;
       left: 50%;
       top: auto;
-      bottom: 5rem;
-      width: 9.4rem;
-      height: 6.4rem;
+      bottom: 2rem;
       display: none;
       @media (min-width: $media-768) {
           display: block;
@@ -330,6 +329,10 @@
       img {
           margin: 0 auto;
           @media (min-width: $media-768) {
+              width: 6rem;
+              height: 4rem;
+          }
+          @media (min-width: $media-1600) {
               width: 9.4rem;
               height: 6.4rem;
           }

@@ -12,15 +12,15 @@
                 var pinIcono = "media/pin-active.png";
                 var html
                 var disItem = {
-                    latitude: 3.458899,
-                    longitude: -76.519464,
+                    latitude: 3.445917,
+                    longitude: -76.528472,
                     content: ' <img src="img/log.JPG" alt="Icono" style="width: 100%; height: 100%;">',
                     thePin: new google.maps.MarkerImage(pinIcono, null, null, null, new google.maps.Size(2, 3)),
                     role: 'main'
                 };
                 markerList.push(disItem);
 
-                var maincoors = [markerList[0].latitude, markerList[0].longitude] || [3.458899, -76.519464];
+                var maincoors = [markerList[0].latitude, markerList[0].longitude] || [3.445917, -76.528472];
 
                 var mapOptions = {
                     zoom: 15,

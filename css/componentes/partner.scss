@@ -107,11 +107,8 @@
   
   .zone-2 {
       span {
-          @media (min-width: $media-768) {
-              font-size: 4rem;
-          }
           @media (min-width: $media-1600) {
-              font-size: 5.5rem;
+              font-size: 4rem;
           }
           text-align: center;
           font-size: 3rem;

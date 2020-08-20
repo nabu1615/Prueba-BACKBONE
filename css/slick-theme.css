@@ -210,15 +210,15 @@
 
 @media (min-width: 1280px) {
     .slick-dots li button:before {
-        top: -3rem;
-        left: -50rem;
+        top: 2.7rem;
+        left: -45rem;
     }
 }
 
 @media (min-width: 1600px) {
     .slick-dots li button:before {
-        top: -5rem;
-        left: -70rem;
+        top: -2.7rem;
+        left: -65rem;
     }
 }
 

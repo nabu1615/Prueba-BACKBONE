@@ -22,6 +22,7 @@ header {
         z-index: 1;
     }
     background-color: #fff;
+    border-bottom: 1px solid #919191;
 }
 
 .sm-navigation {
@@ -91,38 +92,44 @@ header {
     @media (min-width: $media-768) {
         position: absolute;
         top: 44px;
-        width: 165px;
+        width: 110px;
         left: 50%;
         transform: translate(-50%);
         display: block;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px
     }
     @media (min-width: $media-960) {
         position: absolute;
         top: 44px;
-        width: 173px;
+        width: 140px;
         left: 50%;
         transform: translate(-50%);
         display: block;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px
     }
     @media (min-width: $media-1280) {
         position: absolute;
         top: 44px;
-        width: 230px;
+        width: 148px;
         left: 50%;
         transform: translate(-50%);
         display: block;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px
     }
     @media (min-width: $media-1600) {
         position: absolute;
         top: 44px;
-        width: 275px;
+        width: 200px;
         left: 50%;
         transform: translate(-50%);
         display: block;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
     }
     display: none;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
 }
 
 .logo-sm {
@@ -147,7 +154,6 @@ header {
     font-size: 1rem;
     display: none;
     @media (min-width: $media-768) {
-        font-size: 1.2rem;
         display: block;
     }
     @media (min-width: $media-960) {
@@ -229,7 +235,7 @@ header {
         font-weight: 700;
         padding: 1.5rem;
         @media (min-width: $media-768) {
-            padding: 4rem 0;
+            padding: 2rem 0;
             font-size: 1rem;
         }
         @media (min-width: $media-960) {
@@ -237,6 +243,7 @@ header {
         }
         @media (min-width: $media-1600) {
             font-size: 1.6rem;
+            padding: 3rem 0;
         }
     }
 }
@@ -283,12 +290,12 @@ header {
 
 .container {
     @media (min-width: $media-1280) {
-        width: 137rem !important;
+        width: 120rem !important;
         max-width: 100%;
         margin: 0 auto;
     }
     @media (min-width: $media-1600) {
-        width: 162.6rem !important;
+        width: 152.6rem !important;
         max-width: 100%;
         margin: 0 auto;
     }
