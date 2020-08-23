@@ -84,12 +84,12 @@
                 font-weight: 700;
             }
             span {
-                font-size: 2.5rem;
+                font-size: 2.3rem;
                 @media (min-width: $media-1600) {
-                    font-size: 3rem;
+                    font-size: 2.8rem;
                 }
                 @media (min-width: 1920px) {
-                    font-size: 4rem;
+                    font-size: 3.5rem;
                 }
                 font-weight: 700;
             }
@@ -103,6 +103,7 @@
         background-color: #ffffff;
         .video {
             width: 100%;
+            height: inherit;
         }
         .row {
             height: 100%;
@@ -112,8 +113,10 @@
             margin-bottom: 5rem;
             padding-top: 5rem;
             @media (min-width: $media-960) {
-                height: 80.7rem;
                 padding: 6rem;
+            }
+            @media (min-width: 1920px) {
+                height: 80.7rem;
             }
             h3 {
                 color: $color-fou;
@@ -125,6 +128,9 @@
             }
             form {
                 label {
+                    a {
+                        color: $color-fir !important;
+                    }
                     color: $color-fir;
                     font-size: 1.3rem;
                     font-weight: 700;
@@ -142,7 +148,7 @@
                     }
                     font-weight: 700;
                     background-color: #D6D7D9;
-                    padding: 1.8rem 0.5rem;
+                    padding: 1.6rem 0.5rem;
                 }
                 input::-webkit-input-placeholder {
                     color: #313C42;
@@ -165,5 +171,42 @@
                     margin-top: 1.8rem;
                 }
             }
+        }
+    }
+    
+    .banco {
+        height: 50rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        h2 {
+            color: $color-fou;
+            font-size: 3rem;
+            width: 100%;
+            font-weight: 700;
+            @media (min-width: $media-960) {
+                font-size: 5rem;
+            }
+        }
+        p {
+            color: $color-fir;
+            font-size: 2rem;
+            width: 100%;
+            margin-top: 2rem;
+            font-weight: 500;
+            @media (min-width: $media-960) {
+                font-size: 3rem;
+            }
+        }
+        a {
+            background-color: $color-fir;
+            color: #ffffff;
+            font-size: 2rem;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-weight: 700;
         }
     }

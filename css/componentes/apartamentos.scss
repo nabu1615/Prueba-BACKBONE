@@ -12,12 +12,12 @@
             font-size: 4rem;
             font-weight: 700;
         }
-        // @media (min-width: $media-768) {
-        //     padding: 4rem 8rem 4rem 3rem;
-        // }
-        // @media (min-width: 1920px) {
-        //     padding: 17rem 32rem 19rem 13rem;
-        // }
+        @media (min-width: $media-768) {
+            padding: 4rem;
+        }
+        @media (min-width: $media-1600) {
+            padding: 4rem 12rem 4rem 3rem;
+        }
         padding: 2rem;
     }
     label {
@@ -40,7 +40,14 @@
         background-color: #F8F8F8;
         appearance: none;
         color: $color-fir;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        line-height: 1;
+        @media (min-width: $media-768) {
+            font-size: 2rem;
+        }
+        @media (min-width: $media-1600) {
+            font-size: 2.4rem;
+        }
         text-align: left;
         background-image: url(/img/arrowOptionDown.svg);
         font-weight: 700;
@@ -88,7 +95,7 @@
 }
 
 .infoApto {
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding: 0 5rem;
     .metroCuadrado {
         width: 100%;
@@ -100,11 +107,16 @@
         color: #ffffff;
         padding: 2rem 6rem;
         margin-top: 3rem;
+        font-size: 1.4rem;
+        font-weight: 700;
         @media (min-width: $media-768) {
             padding: 1rem 4rem;
         }
         @media (min-width: $media-1280) {
             padding: 2rem 6rem;
+        }
+        @media (min-width: $media-1600) {
+            font-size: 1.8rem;
         }
     }
     h2 {
@@ -180,8 +192,24 @@
     }
 }
 
+.InfoAcabados {
+    h2 {
+        color: $color-fou;
+        font-size: 4rem;
+        font-weight: 700;
+        padding: 1.5rem 0;
+        @media (min-width: $media-768) {
+            font-size: 3rem;
+        }
+        @media (min-width: $media-1600) {
+            font-size: 4rem;
+        }
+    }
+}
+
 .InfoDesgloce {
     margin-top: 5rem;
+    display: none;
     @media (min-width: $media-960) {
         margin-top: 7rem;
     }
@@ -199,9 +227,13 @@
             font-size: 2rem;
         }
     }
+    h4 {
+        color: $color-fir;
+    }
 }
 
 .detal {
+    padding-bottom: 5rem;
     .plano-apto {
         margin-top: 5rem;
         @media (min-width: $media-960) {
@@ -218,9 +250,9 @@
             color: $color-fou;
             border: 1px solid $color-fou;
             padding: 2rem;
-            font-size: 1rem;
+            font-size: 1.3rem;
             @media (min-width: $media-1600) {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
             }
             text-align: center;
             font-weight: 700;
@@ -309,9 +341,13 @@
     margin: 2rem;
 }
 
-.piso1 {
+.first-image-map {
     // object-fit: cover !important;
     width: 100%;
+}
+
+.piso-2 {
+    display: none;
 }
 
 .dispoText {
@@ -332,18 +368,26 @@ span {
     }
 }
 
+#acabados {
+    padding: 3.3rem 2rem;
+}
+
 .inactiveBtn {
     color: #4e4e4e;
     background-color: #F8F8F8;
-    border: none;
+    border: 2px solid #000000;
     padding: 2rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     @media (min-width: $media-1600) {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     text-align: center;
     font-weight: 700;
     display: inline;
     text-decoration: none;
     width: 50%;
+}
+
+.SelectGroups optgroup {
+    display: none;
 }

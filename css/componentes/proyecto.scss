@@ -1,20 +1,20 @@
 .info-proyecto {
     margin: 0 auto;
-    min-height: 98rem;
+    min-height: 140rem;
     @media (min-width: $media-768) {
         min-height: 85rem;
     }
     @media (min-width: $media-1280) {
-        min-height: 110rem;
+        min-height: 175rem;
     }
     img {
         width: 100%;
         max-width: 100%;
         object-fit: cover;
-        @media (min-width: $media-768) {
-            height: 76rem;
-        }
-        height: 50rem;
+        // @media (min-width: $media-768) {
+        //     height: 76rem;
+        // }
+        height: 100%;
     }
     &-bg {
         margin: 0 auto;
@@ -44,23 +44,31 @@
         width: 100%;
         text-align: left;
         padding: 3rem;
-        height: 100rem;
-        top: 30%;
+        height: 100%;
+        top: 100%;
         left: 50%;
         transform: translate(-50%);
         display: inline-block;
         position: absolute;
+        img {
+            width: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            // @media (min-width: $media-768) {
+            //     height: 76rem;
+            // }
+            height: 100%;
+        }
         @media (min-width: $media-768) {
             width: 80%;
-            top: 15%;
+            top: 70%;
         }
         @media (min-width: $media-960) {
             height: 70rem;
         }
         @media (min-width: $media-1280) {
             padding: 10rem;
-            height: 80rem;
-            top: 30%;
+            height: max-content;
         }
         @media (min-width: $media-1600) {
             width: 122.6rem;
@@ -170,31 +178,35 @@
 
 .proyectoApto {
     @media (min-width: $media-768) {
-        padding-top: 8rem;
+        padding-top: 10rem;
     }
     padding-top: 8rem;
-    text-align: left;
+    text-align: center;
     height: 100%;
     background-color: #fff;
     .row {
         margin: 5rem auto;
     }
     h3 {
-        text-align: left;
+        text-align: center;
         font-size: 2.5rem;
+        @media (min-width: $media-960) {
+            font-size: 3rem;
+        }
     }
     p {
         @media (min-width: $media-1600) {
-            font-size: 2.4rem;
+            font-size: 2rem;
         }
         font-size: 1.8rem;
         color: $color-fir;
         font-weight: 500;
     }
-    .video {
-        height: 70vh;
+    img {
+        height: 100%;
         width: 100%;
         position: relative;
+        object-fit: cover;
     }
 }
 
@@ -211,19 +223,14 @@
     margin-top: 10rem;
     text-align: center;
     h2 {
-        @media (min-width: $media-768) {
-            font-size: 7rem;
-        }
-        @media (min-width: $media-960) {
-            font-size: 10rem;
-        }
-        @media (min-width: $media-1600) {
-            font-size: 20rem;
-        }
-        font-size: 4rem;
+        text-align: center;
+        font-size: 2.5rem;
         color: $color-fou;
         text-align: center;
         font-weight: 700;
+        @media (min-width: $media-1600) {
+            font-size: 4rem;
+        }
     }
     p {
         @media (min-width: $media-960) {
@@ -239,11 +246,40 @@
 }
 
 .Recomposicion {
-    .background-2 {
+    .background-5 {
+        img {
+            margin-top: 20rem;
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+            @media (min-width: $media-768) {
+                margin: 0;
+            }
+        }
         display: block !important;
     }
-    .background-3 {
-        padding: 2rem;
+    .background-6 {
+        background-color: $color-sec;
+        height: 100%;
+        padding: 9.7rem 2rem;
+        text-align: left;
+        p {
+            color: #ffffff;
+            font-size: 1.4rem;
+            font-weight: 500;
+            @media (min-width: $media-1600) {
+                font-size: 2.4rem;
+            }
+        }
+        li {
+            list-style-type: lower-roman;
+            color: #ffffff;
+            font-size: 1.4rem;
+            font-weight: 500;
+            @media (min-width: $media-1600) {
+                font-size: 2.4rem;
+            }
+        }
     }
     text-align: center;
     .row {
@@ -279,7 +315,8 @@
         top: auto;
         bottom: 3rem;
         left: 4.8rem;
-        font-size: 1.4rem;
+        font-size: 1rem;
         font-weight: 500;
+        margin-right: 1rem;
     }
 }

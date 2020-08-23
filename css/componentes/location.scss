@@ -148,6 +148,9 @@
      }
      form {
          label {
+             a {
+                 color: $color-fir !important;
+             }
              color: $color-fir;
              font-size: 1.4rem;
              font-weight: 700;
@@ -205,4 +208,15 @@
      width: 100%;
      background-color: #ffffff;
      border: none;
+ }
+ 
+ select {
+     appearance: none;
+     color: #313C42;
+     background-image: url(/media/arrowOptionDown.svg);
+     font-weight: 700;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     background-repeat: no-repeat;
+     background-position-x: right;
  }

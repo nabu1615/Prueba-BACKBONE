@@ -1,30 +1,41 @@
   .slick {
+      .slick-next {
+          right: 25px;
+      }
+      .slick-prev {
+          left: 25px;
+      }
       span {
           text-align: left;
           color: #ffffff;
           position: absolute;
           top: auto;
-          bottom: 3rem;
-          font-size: 1.4rem;
+          bottom: 1rem;
+          line-height: 1;
+          font-size: 1rem;
           font-weight: 500;
           display: none;
           width: 72.5rem;
-          @media (min-width: $media-1600) {
+          @media (min-width: $media-1280) {
               display: block;
-              width: 72.5rem;
+              width: 40%;
               top: auto;
-              bottom: 3rem;
-              left: 7rem;
+              left: 60%;
+          }
+          @media (min-width: $media-1600) {
+              font-size: 1.2rem;
           }
           @media (min-width: 1920px) {
               display: block;
               width: 72.5rem;
               top: auto;
+              font-size: 1.4rem;
               bottom: 3rem;
               left: 14.5rem;
           }
       }
       img {
+          opacity: 0.6;
           @media (min-width: $media-768) {
               width: 100%;
               height: 100vh;
@@ -108,7 +119,7 @@
           }
           @media (min-width: $media-1280) {
               display: block;
-              font-size: 2rem;
+              font-size: 2.5rem;
           }
       }
       a {
@@ -154,6 +165,7 @@
   }
   
   .slickshow {
+      background-color: #000000;
       @media (min-width: $media-768) {
           position: relative;
       }
@@ -214,7 +226,8 @@
   
   .multiple-items i,
   .multiple-items-2 i,
-  .mmultiple-items-3 i {
+  .mmultiple-items-3 i,
+  .slick i {
       display: none;
       color: $color-fou;
       right: 0;
@@ -230,6 +243,11 @@
           display: block;
           position: absolute;
       }
+  }
+  
+  .slick i {
+      color: #ffffff;
+      font-size: 7rem;
   }
   
   .slick-2 img {
@@ -319,7 +337,7 @@
   
   .scroll {
       position: absolute;
-      left: 50%;
+      left: 48.5%;
       top: auto;
       bottom: 2rem;
       display: none;

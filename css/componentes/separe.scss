@@ -1,0 +1,51 @@
+    .separe-banner {
+        margin: 5rem auto;
+        @media (min-width: $media-768) {
+            height: 50rem;
+            padding-top: 25rem;
+            margin: 5rem auto;
+            margin-bottom: 10rem;
+        }
+        @media (min-width: $media-1600) {
+            height: 58.5rem;
+            padding-top: 35rem;
+            // margin: 10rem;
+        }
+        padding-top: 5rem;
+        height: 100%;
+        text-align: start;
+        h3 {
+            font-size: 3rem;
+            margin: 0;
+            text-align: left;
+            @media (min-width: $media-960) {
+                font-size: 4rem;
+            }
+            @media (min-width: $media-1600) {
+                font-size: 6rem;
+            }
+        }
+    }
+    
+    .separar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        p {
+            color: $color-fou;
+            font-size: 2.4rem;
+            @media (min-width: $media-960) {
+                font-size: 3rem;
+                // width: 70%;
+            }
+            @media (min-width: $media-1600) {
+                font-size: 4rem;
+                // width: 70%;
+            }
+        }
+        .boton-2 {
+            margin: 0 auto;
+            height: 6.3rem;
+            text-align: center;
+        }
+    }

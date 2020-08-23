@@ -14,7 +14,7 @@
                 var disItem = {
                     latitude: 3.445917,
                     longitude: -76.528472,
-                    content: ' <img src="img/log.JPG" alt="Icono" style="width: 100%; height: 100%;">',
+                    content: ' <img src="img/log.JPG" alt="Icono" style="width: 10rem; height: 10rem;">',
                     thePin: new google.maps.MarkerImage(pinIcono, null, null, null, new google.maps.Size(2, 3)),
                     role: 'main'
                 };

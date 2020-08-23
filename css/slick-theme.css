@@ -191,7 +191,7 @@
     line-height: 20px;
     position: absolute;
     top: -5rem;
-    left: -30rem;
+    left: 50%;
     width: 2rem;
     height: 2rem;
     content: '•';
@@ -202,23 +202,23 @@
 
 @media (min-width: 960px) {
     .slick-dots li button:before {
-        display: block;
+        /* display: block; */
         top: -5rem;
-        left: -30rem;
+        /* left: -30rem; */
     }
 }
 
 @media (min-width: 1280px) {
     .slick-dots li button:before {
         top: 2.7rem;
-        left: -45rem;
+        /* left: -45rem; */
     }
 }
 
 @media (min-width: 1600px) {
     .slick-dots li button:before {
         top: -2.7rem;
-        left: -65rem;
+        /* left: -65rem; */
     }
 }
 

@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/css/jquery.datetimepicker.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -88,131 +87,19 @@
         </nav>
         <!--Navegacion-->
     </header>
-    <main>
-        <section class="container contacto-banner">
-            <h4>CONTACTO</h4>
-            <h3>Separe Su Inmueble</h3>
-            <p>Contáctenos a través de nuestros diferentes canales de ventas Lorem ipsum donor.</p>
-            <!-- <input type="text" id="pruebaMijo" placeholder="Fecha y hora"> -->
-        </section>
-        <section class="contacto-location">
-            <div class="row align-items-center">
-                <div class="no-padding col-12 col-md-6 building">
-                    <img src="img/building.svg" alt="building">
-                    <div>
-                        <p>Sala de Ventas</p>
-                        <span>CALLE 57 # CRA 8 - 24 <br>CALI, COLOMBIA</span>
-                    </div>
-                </div>
-                <div class="no-padding col-12 col-md-6 phone">
-                    <img src="img/phone.svg" alt="phone">
-                    <div>
-                        <p>Teléfonos</p>
-                        <span>+57 (316) 523 7700 <br> +57 (314) 298 5291</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="no-padding background-4 col-12 col-xl-6">
-                        <div class="row">
-                            <div class="col-12">
-                                <h3>Solicite una cita</h3>
-                            </div>
-                            <div class="col-12">
-                                <p>Llene el siguiente formulario para visitar nuestra sala de ventas. La confirmación de la cita llegará a su correo Electrónico</p>
-                            </div>
-                            <form action="" method="POST" id="CitaForm">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 mt-3">
-                                        <input type="number" min="0" id="torre" name="torre" placeholder="En que torre esta interesado?">
-                                    </div>
-                                    <div class="col-12 col-md-6 mt-3">
-                                        <select id="apartamento" required>
-                                            <option value="">En que piso esta interesado?</option>
-                                            <option value="ETI">201</option>
-                                            <option value="PUL">301</option>
-                                            <option value="ESF">401</option>
-                                         </select>
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <input type="text" id="tipoCita" name="tipocita" placeholder="Quiero mi cita por un medio digital">
-                                    </div>
-                                    <div class="col-12 col-md-6 mt-3">
-                                        <input type="text" id="name1" name="name" placeholder="Nombre Y Apellido*">
-                                    </div>
-                                    <div class="col-12 col-md-6 mt-3">
-                                        <input type="tel" id="phone1" name="phone" placeholder="Número De Teléfono*">
-                                    </div>
-                                    <div class="col-12 col-md-6 mt-3">
-                                        <input type="email" id="email1" name="email" placeholder="Correo Eletrónico*">
-                                    </div>
-                                    <div class="col-12 col-md-6 mt-3">
-                                        <input type="text" id="fechaContacto" placeholder="Fecha y hora">
-                                    </div>
-                                    <div class="col-2 col-md-1 mt-3">
-                                        <input type="checkbox" id="cbox3" value="second_checkbox" class="cbox">
-                                    </div>
-                                    <div class="col-9 col-md-5 mt-3">
-                                        <label for="cbox2"><a href=""> Acepto los términos y condiciones</a></label>
-                                    </div>
-                                    <div class="col-12 col-md-6 mt-3">
-                                        <input type="submit" name="submit" id="submit2" value="SOLICITAR" class="boton">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="no-padding background-3 col-12 col-xl-6">
-                        <div class="row">
-                            <div class="col-12">
-                                <h3>Contáctenos</h3>
-                            </div>
-                            <div class="col-12">
-                                <p>Es tu oportunidad de invertir. ¡No te quedes por fuera! Los apartamentos de Proyecto Paraíso son una excelente oportunidad de negocio.</p>
-                            </div>
-                            <div class="col-12">
-                                <span>*Campos Obligatorios</span>
-                            </div>
-                            <form action="" method="POST" id="ContactForm2">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 mt-3">
-                                        <input type="text" id="name2" name="name" placeholder="Nombre Y Apellido*">
-                                    </div>
-                                    <div class="col-12 col-md-6 mt-3">
-                                        <input type="tel" id="phone2" name="phone" placeholder="Número De Teléfono*">
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <input type="email" id="email2" name="email2" placeholder="Correo Eletrónico*">
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <textarea name="message" id="message2" placeholder="Mensaje*"></textarea>
-                                    </div>
-                                    <div class="col-2 col-md-1 mt-3">
-                                        <input type="checkbox" id="cbox4" value="first_checkbox" class="cbox">
-                                    </div>
-                                    <div class="col-9 col-md-11 mt-3">
-                                        <label for="cbox1"> <a href=""> Acepto la política de tratamiento de mis datos personales</a></label>
-                                    </div>
-                                    <div class="col-2 col-md-1 mt-3">
-                                        <input type="checkbox" id="cbox5" value="second_checkbox" class="cbox">
-                                    </div>
-                                    <div class="col-9 col-md-11 mt-3">
-                                        <label for="cbox2"> <a href=""> Acepto los términos y condiciones</a></label>
-                                    </div>
-                                    <div class="col-12 col-md-6 mt-3">
-                                        <input type="submit" name="submit" id="submit3" value="ENVIAR" class="boton">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-        </section>
-        <!--Locaizacion del proyecto y formulario de contacto-->
-        <section class="container banco">
-            <h2>¿Esta interesado en aplicar crédoto de vivienda?</h2>
-            <p>Nuestra alianza con el Banco de Bogotá le ayudará a conseguir las mejores tasas de crédito.</p>
-            <a href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota">CONTACTAR</a>
-        </section>
 
+    <main>
+
+        <div class="container separe-banner">
+            <h3>¡Próximamente podrás separar en línea tu apartamento!</h3>
+            <div class="separar">
+                <p>Mientras esto ocurre, te invitamos a conocer nuestro apartamento modelo </p>
+                <a href="#" class="boton-2">apartamentos</a>
+            </div>
+        </div>
+
+
+        <!--Aliados comerciales-->
         <article>
             <div class="redes container">
 
@@ -226,7 +113,7 @@
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <ul class="juicer-feed" data-feed-id="backbonedigital">
+                <ul class="juicer-feed" data-feed-id="paraisocentralcali">
                     <h1 class="referral"></h1>
                 </ul>
 
@@ -234,7 +121,6 @@
         </article>
         <!--Articuos y enlaces a publicaciones en redes-->
     </main>
-
     <footer>
         <div class="row footer-sm container">
             <div class="col-12">
@@ -329,7 +215,7 @@
         </div>
     </footer>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXo3psTM4Cx4jbylzNbMgCD1_4qHhx58c"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd1oOOUKSKBMpxYLvnQjuHphBjd6K3aWA"></script>
     <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -338,7 +224,6 @@
     <script src="/js/jquery.maphilight.min.js"></script>
     <script src="/js/jquery.rwdImageMaps.js"></script>
     <script src="/js/jquery.rwdImageMaps.min.js"></script>
-    <script src="/js/jquery.datetimepicker.full.js"></script>
     <script src="js/map.js"></script>
     <script src="https://kit.fontawesome.com/1f330f959c.js" crossorigin="anonymous"></script>
     <script src="js/main.js" crossorigin="anonymous"></script>
